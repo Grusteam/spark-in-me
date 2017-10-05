@@ -1,0 +1,142 @@
+
+
+.root {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	padding: 0;
+	margin: 0;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.leftControlVis {
+	opacity: 1;
+}
+
+.leftControlItem {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+}
+
+.leftControlItem:last-of-type {
+	margin: -1px 0 0;
+}
+
+.leftControlItem:last-of-type .leftControlLink {
+	border-bottom: 1px solid #ddd;
+}
+
+.leftControlItem:last-of-type .leftControlLink:hover {
+	border: 1px solid #0085a1;
+}
+
+.leftControlLink {
+	display: block;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	width: 50px;
+	height: 50px;
+	color: #000;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	float: right;
+	clear: both;
+	outline: none;
+}
+
+.leftControlLink:hover {
+	color: #fff;
+	background-color: #0085a1;
+	border-color: #0085a1;
+}
+
+.popularAuthors {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	display: none;
+}
+
+.popularAuthorsVis {
+	display: block;
+}
+
+.popularAuthorsItem {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.popularAuthorsItem:last-of-type .popularAuthorsLink {
+	border-bottom: 1px solid #ddd;
+}
+
+.popularAuthorsLink {
+	display: block;
+	padding: 0 0 0 8px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	color: #000;
+	position: relative;
+	text-align: left;
+	font-size: 18px;
+}
+
+.popularAuthorsLink:hover {
+	color: #fff;
+	background-color: #0085a1;
+	border-color: #0085a1;
+	text-decoration: none;
+}
+
+.popularAuthorsCount {
+	min-width: 28px;
+	color: #000;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	float: right;
+	width: 47px;
+	text-align: left;
+}
+
+.popularAuthorsLink:hover span {
+	color: #fff;
+}
+
+.popularAuthorsName {
+	margin: 0 12px 0 3px;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+
+.popularAuthorsNameSimilar {
+	max-width: 200px;
+}
+
+.popularAuthorsLink i {
+	margin: 0 4px 0 0;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+	.root {
+		display: block;
+	}
+}

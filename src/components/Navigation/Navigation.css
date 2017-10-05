@@ -1,0 +1,135 @@
+
+
+.root {
+	min-height: 60px;
+	z-index: 100;
+}
+
+.navbarCollapse {
+	transition: max-height .3s;
+	max-height: 0 !important;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.navbarCollapseActive {
+	max-height: 500px !important;
+	transition: max-height .5s;
+	z-index: 100;
+	overflow: visible;
+}
+
+.navbarNav {
+	margin-bottom: -10px;
+}
+
+.searchForm {
+	margin: 12px 18px 0 0 !important;
+	width: 0;
+	transition: width .3s;
+	padding: 0;
+}
+
+.searchFormVisible {
+	width: 300px;
+}
+
+.searchWrapInput {
+	width: 100%;
+	overflow: hidden;
+}
+
+.searchInput {
+	border-radius: 0;
+	border: none;
+	width: 100% !important;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+	padding: 0;
+}
+
+.searchFormVisible .searchInput {
+	padding: 6px 12px;
+}
+
+.searchBtn {
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 19px 10px;
+	outline: none;
+}
+
+.searchBtn:hover {
+	color: rgba(255, 255, 255, .8);
+}
+
+.navFixed .searchBtn {
+	color: #333;
+}
+
+.navFixed .searchBtn:hover {
+	color: #0085a1;
+}
+
+.searchDrop {
+	width: 100%;
+}
+
+.searchDropList {
+	border-radius: 0;
+	border: none;
+	width: 100%;
+}
+
+.searchDropLink {
+	padding: 6px 12px !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800 !important;
+}
+
+.searchDropLink i {
+	width: 15px;
+	margin-right: 4px;
+}
+
+@media only screen and (max-width: 880px) {
+	.searchForm {
+		clear: both;
+		margin-right: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.searchBtn {
+		display: none;
+	}
+
+	.searchForm {
+		width: 100%;
+		opacity: 0;
+		transition: opacity .3s;
+	}
+
+	.searchInput {
+		padding: 6px 12px;
+	}
+
+	.navbarNav {
+		opacity: 0;
+		transition: opacity .3s;
+	}
+
+	.navbarCollapseActive .navbarNav,
+	.navbarCollapseActive .searchForm {
+		opacity: 1;
+		transition: opacity .3s .1s;
+	}
+}

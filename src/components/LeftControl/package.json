@@ -1,0 +1,6 @@
+{
+	"name": "LeftControl",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./LeftControl.js"
+}

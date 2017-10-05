@@ -1,0 +1,21 @@
+
+
+article img {
+	max-width: 100% !important;
+}
+
+.tags {
+	margin: 30px 0 0;
+}
+
+.tags a {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	font-family: 'Lora', 'Times New Roman', serif;
+	font-style: italic;
+}
+
+.tags a i {
+	margin: 0 3px 1px 0;
+	vertical-align: middle;
+}

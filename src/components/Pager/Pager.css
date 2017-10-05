@@ -1,0 +1,25 @@
+
+@import '../../components/variables.css';
+
+.pagerNext .pagerBtn {
+	float: right;
+}
+
+.pagerBtn {
+	font-size: 14px;
+	padding: 15px 25px;
+	background-color: #fff;
+	border-radius: 0;
+	border: 1px solid #ddd;
+	display: none;
+}
+
+.pagerBtnVis {
+	display: block !important;
+}
+
+.pagerBtn:hover {
+	color: #fff;
+	background-color: #0085a1;
+	border: 1px solid #0085a1;
+}

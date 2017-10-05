@@ -1,0 +1,27 @@
+
+@import '../../components/variables.css';
+
+.pagerBack {
+	margin-bottom: 45px;
+	text-align: left;
+}
+
+.link {
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.link:hover {
+	text-decoration: none;
+}
+
+.link i {
+	margin: 0 7px 7px 0;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.linkText {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}

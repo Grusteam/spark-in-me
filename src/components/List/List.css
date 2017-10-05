@@ -1,0 +1,170 @@
+
+
+@import '../../components/variables.css';
+
+.post {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+}
+
+.post a {
+	color: #333;
+	display: block;
+	cursor: pointer;
+}
+
+.post a:hover,
+.post a:focus {
+	text-decoration: none;
+	color: #0085a1;
+}
+
+.postTitle {
+	font-size: 30px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.postSubtitle {
+	margin: 0;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.postMeta {
+	color: #777;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.postImg {
+	text-align: center;
+	display: block;
+}
+
+.postImg img {
+	max-width: 100%;
+	cursor: pointer;
+}
+
+.postMeta a {
+	text-decoration: none;
+	color: #333;
+	display: inline-block;
+}
+
+.postMeta a:hover,
+.postMeta a:focus {
+	color: #0085a1;
+	text-decoration: underline;
+}
+
+.postTags {
+	margin-bottom: 15px;
+}
+
+.postTags a {
+	display: inline-block;
+	margin: 0 8px 0 0;
+	color: #777;
+	font-family: 'Lora', 'Times New Roman', serif;
+	font-style: italic;
+}
+
+.postTag {
+	font-size: 14px;
+}
+
+.postTag i {
+	margin: 0 3px 1px 0;
+	vertical-align: middle;
+}
+
+.bsCallout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bsCallout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+	/*font-weight: 500;*/
+}
+
+.bsCallout p:last-child {
+    margin-bottom: 0;
+}
+
+.bsCallout code {
+    border-radius: 3px;
+}
+
+.bsCallout+.bsCallout {
+    margin-top: -5px;
+}
+
+.bsCalloutDefault {
+    border-left-color: #777;
+}
+
+.bsCalloutDefault h4 {
+    color: #777;
+}
+
+.tags {
+	margin-bottom: 70px;
+	text-align: left;
+}
+
+.tagsItem {
+	display: inline-block;
+	white-space: nowrap;
+	padding: 5px 10px;
+	padding-left: 0;
+}
+
+.tagsLink {
+	font-family: 'Lora', 'Times New Roman', serif;
+	font-style: italic;
+	display: inline-block;
+	color: #777;
+	font-size: 18px;
+}
+
+.tagsCount {
+	color: #000;
+	display: inline-block;
+	margin-left: 4px;
+	background-color: #ccc;
+	border-radius: 50%;
+	height: 20px;
+	min-width: 20px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 5px;
+	font-style: italic;
+}
+
+@media only screen and (min-width: 767px) {
+	.postTitle {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.postTitle {
+		font-size: 24px;
+	}
+
+	.postSubtitle {
+		font-size: 18px;
+	}
+}

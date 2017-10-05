@@ -1,0 +1,41 @@
+	
+
+.root {
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.headSiteImg,
+.headPostImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #8e8e8e;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+.headPostImg {
+	filter: blur(5px) brightness(55%);
+	transform: scale(1.3);
+}
+
+.headSoc {
+	color: #fff;
+}
+
+.headError {
+	height: 100vh;
+	margin: 0;
+}
+
+.socAuthor {
+	font-size: 16px;
+	margin-top: 15px;
+}
+

@@ -1,0 +1,2284 @@
+{
+  "rows": [
+  {
+    "table_id": 141,
+    "brand_name": "Симфонический киноконцерт «Крестный отец»",
+    "dates": "2015-11-21 - 2015-11-21",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3600
+  },
+  {
+    "table_id": 164,
+    "brand_name": "Иванушки International",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 176,
+    "brand_name": "Новогоднее шоу чудо Фиксики - елка",
+    "dates": "2015-12-19 - 2016-01-09",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 95,
+    "brand_name": "Григорий Лепс",
+    "dates": "2015-07-16 - 2015-07-16",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 7000
+  },
+  {
+    "table_id": 94,
+    "brand_name": "Парк Горького ",
+    "dates": "2015-05-14 - 2015-05-14",
+    "request_sum": "50 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3500
+  },
+  {
+    "table_id": 93,
+    "brand_name": "Концерт Эдуарда Артемьева",
+    "dates": "2015-11-22 - 2015-11-22",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 165,
+    "brand_name": "Пласидо Доминго",
+    "dates": "2016-01-14 - 2016-01-14",
+    "request_sum": "20 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 10000
+  },
+  {
+    "table_id": 126,
+    "brand_name": "Ваши любимые песни (Григорий Лепс, Аллегрова, Крутой, Орбакайте, Киркоров, Долина, Сюткин, Леонтьев, Агутин, Любэ, Кормухина, Басков и др.)",
+    "dates": "2015-10-06 - 2015-10-06",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 272,
+    "brand_name": "Adam Lambert",
+    "dates": "2016-04-18 - 2016-04-18",
+    "request_sum": "2 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 177,
+    "brand_name": "Волшебные пузыри - елка",
+    "dates": "2015-12-19 - 2016-01-09",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 125,
+    "brand_name": "Братья Сафроновы",
+    "dates": "2015-09-27 - 2015-09-27",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 7100
+  },
+  {
+    "table_id": 189,
+    "brand_name": "Fifth Harmony",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 190,
+    "brand_name": "Charli XCX",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 191,
+    "brand_name": "Ariana Grande",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 263,
+    "brand_name": "Elton John",
+    "dates": "2016-05-30 - 2016-05-30",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": null
+  },
+  {
+    "table_id": 262,
+    "brand_name": "Simply Red",
+    "dates": "2016-06-27 - 2016-06-27",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": null
+  },
+  {
+    "table_id": 226,
+    "brand_name": "Дельфин",
+    "dates": "2015-02-28 - 2015-02-28",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 67,
+    "brand_name": "Garou / Гару",
+    "dates": "2015-10-29 - 2015-10-29",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4500
+  },
+  {
+    "table_id": 11,
+    "brand_name": "Премия Ру.Тв ",
+    "dates": "2015-05-29 - 2015-05-29",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 161,
+    "brand_name": "Руки Вверх!",
+    "dates": "2015-11-06 - 2015-11-06",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 160,
+    "brand_name": "группа Пикник",
+    "dates": "2015-11-01 - 2015-11-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 159,
+    "brand_name": "Лариса Долина",
+    "dates": "2015-10-24 - 2015-10-24",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3500
+  },
+  {
+    "table_id": 158,
+    "brand_name": "StandUp Show",
+    "dates": "2015-10-03 - 2015-10-03",
+    "request_sum": "1 200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 181,
+    "brand_name": "Nick Jonas",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 182,
+    "brand_name": "Pharrell Williams",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 183,
+    "brand_name": "One Direction",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 184,
+    "brand_name": "Ariana Grande",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 185,
+    "brand_name": "Meghan Trainor",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 186,
+    "brand_name": "Taylor Swift",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 187,
+    "brand_name": "Ed Sheeran",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 139,
+    "brand_name": "Дуэт им. Чехова (Ежегодный концерт самых востребованных артистов COMEDY CLUB)",
+    "dates": "2015-03-31 - 2015-03-31",
+    "request_sum": "7 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4800
+  },
+  {
+    "table_id": 138,
+    "brand_name": "Русский Народный Рок (Рок звезды-солисты совместно с симфоническим и русским народным оркестром и хором им. Александрова)",
+    "dates": "2015-03-17 - 2015-03-17",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3100
+  },
+  {
+    "table_id": 137,
+    "brand_name": "Римские каникулы (Ярчайшие звезды российской эстрады совместно с итальянскими артистами. Лучшее шоу со времен Сан-Ремо. Итальянские суперхиты переведенные на русский язык споют российские артисты. А русские хиты споют итальянцы на итальянском.)",
+    "dates": "2015-03-16 - 2015-03-16",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 136,
+    "brand_name": "Comedy Women (Большой сольный концерт)",
+    "dates": "2015-03-09 - 2015-03-09",
+    "request_sum": "4 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 135,
+    "brand_name": "Вечеринка Comedy Club (USB + музыканты)",
+    "dates": "2015-03-08 - 2015-03-08",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 12000
+  },
+  {
+    "table_id": 134,
+    "brand_name": "Street Jazz. ПУЛЬСАЦИИ (Галла концерт лучшего балета страны совместно с самыми яркими артистами: Николай Басков, Стас Михайлов, Денис Майданов, Сосо Павлиашвили, А-Студио, Стас Пьеха, Витас, EMIN, Валерия, Лолита, Полина Гагарина)",
+    "dates": "2015-03-04 - 2015-03-04",
+    "request_sum": "3 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2200
+  },
+  {
+    "table_id": 133,
+    "brand_name": "Девичник (Григорий Лепс, Николай Басков, Николай Носков, Стас Михайлов, Денис Майданов, Uma2rman, Сосо Павлиашвили, А-Студио, Стас Пьеха, Витас, Александр Буйнов, Александр Маршал, EMIN. Все суперзвезды мужчины поющие для женщин.)",
+    "dates": "2015-03-03 - 2015-03-03",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 132,
+    "brand_name": "ОЧПМ (Григорий Лепс, Николай Басков, Николай Носков, Стас Михайлов, Денис Майданов, Uma2rman, Сосо Павлиашвили, А-Студио, Стас Пьеха, Витас, Александр Буйнов, Александр Маршал, EMIN, Елена Ваенга, Валерия, Лолита, Полина Гагарина и др.)",
+    "dates": "2015-02-22 - 2015-02-22",
+    "request_sum": "6 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 188,
+    "brand_name": "5 Seconds of Summer",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 130,
+    "brand_name": "Задорнов",
+    "dates": "2015-12-31 - 2015-12-31",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 35,
+    "brand_name": "Uma2rmaN.10 лет ",
+    "dates": "2015-02-27 - 2015-02-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 129,
+    "brand_name": "Огонек",
+    "dates": "2015-12-24 - 2015-12-24",
+    "request_sum": "6 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 38,
+    "brand_name": "50 летие Евгения Федорова (TeqilaJazz, Оптимистик Оркестро и Зорге) + приглашенные гости Крокус Сити Холл",
+    "dates": "2015-11-29 - 2015-11-29",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2700
+  },
+  {
+    "table_id": 39,
+    "brand_name": "Акустический Вечер Вячеслава Бутусова",
+    "dates": "2015-05-30 - 2015-05-30",
+    "request_sum": "1 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2800
+  },
+  {
+    "table_id": 40,
+    "brand_name": "Концерт-премьера альбома \"Гудгора\" Вячеслава Бутусова и гр.\"Юпитер\"",
+    "dates": "2015-10-10 - 2015-10-10",
+    "request_sum": "2 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2200
+  },
+  {
+    "table_id": 128,
+    "brand_name": "Сосо Павлиашвили с Симфоническим Оркестром",
+    "dates": "2015-10-12 - 2015-10-12",
+    "request_sum": "3 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 127,
+    "brand_name": "Все хиты Юмора",
+    "dates": "2015-10-07 - 2015-10-07",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3400
+  },
+  {
+    "table_id": 37,
+    "brand_name": "TequilaJazz 24 апреля 2015",
+    "dates": "2015-04-24 - 2015-04-24",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 223,
+    "brand_name": "25/17",
+    "dates": "2015-04-25 - 2015-04-25",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 4,
+    "brand_name": "Children of Bodom",
+    "dates": "2015-06-12 - 2015-06-12",
+    "request_sum": "1 200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 224,
+    "brand_name": "L'One",
+    "dates": "2014-11-30 - 2014-11-30",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 167,
+    "brand_name": "ГУФ",
+    "dates": "2015-11-21 - 2015-11-21",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 3,
+    "brand_name": "In Extremo",
+    "dates": "2015-04-18 - 2015-04-18",
+    "request_sum": "1 400 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 89,
+    "brand_name": "OOMPH!",
+    "dates": "2015-11-04 - 2015-11-04",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2100
+  },
+  {
+    "table_id": 232,
+    "brand_name": "Футбол Динамо",
+    "dates": "2015-12-01 - 2015-12-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 800
+  },
+  {
+    "table_id": 55,
+    "brand_name": "Граф орлов ",
+    "dates": "2015-03-15 - 2015-03-15",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 56,
+    "brand_name": "Граф монте кристо",
+    "dates": "2015-04-05 - 2015-04-05",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 257,
+    "brand_name": "Armin van Buuren",
+    "dates": "2016-03-08 - 2016-03-08",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 175,
+    "brand_name": "Песня Года 2015",
+    "dates": "2015-12-05 - 2015-12-05",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2800
+  },
+  {
+    "table_id": 9,
+    "brand_name": "Легенды Ретро ФМ",
+    "dates": "2014-11-30 - 2014-11-30",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 10,
+    "brand_name": "Премия Муз-ТВ",
+    "dates": "2015-06-06 - 2015-06-06",
+    "request_sum": "8 048 555.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 41,
+    "brand_name": "Фестиваль Прорыв",
+    "dates": "2015-03-14 - 2015-03-14",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1750
+  },
+  {
+    "table_id": 268,
+    "brand_name": "QUEEN + Adam Lambert",
+    "dates": "2016-06-12 - 2016-06-12",
+    "request_sum": "8 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 7000
+  },
+  {
+    "table_id": 261,
+    "brand_name": "Black Sabbath",
+    "dates": "2016-07-12 - 2016-07-12",
+    "request_sum": "4 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": null
+  },
+  {
+    "table_id": 260,
+    "brand_name": "Аквариум ",
+    "dates": "2017-04-01 - 2017-04-01",
+    "request_sum": "6 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1200
+  },
+  {
+    "table_id": 60,
+    "brand_name": "Nickelback",
+    "dates": "2015-12-01 - 2015-12-01",
+    "request_sum": "10 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 20,
+    "brand_name": "Уральские пельмени",
+    "dates": "2015-01-01 - 2015-12-31",
+    "request_sum": "5 756 429.00 руб",
+    "online_sales": "50%",
+    "average_ticket": null
+  },
+  {
+    "table_id": 244,
+    "brand_name": "Глеб САМОЙЛОВ. 45 лет",
+    "dates": "2015-12-03 - 2015-12-03",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2150
+  },
+  {
+    "table_id": 235,
+    "brand_name": " Александр Невзоров. Первый творческий вечер в Москве",
+    "dates": "2015-10-30 - 2015-10-30",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2382
+  },
+  {
+    "table_id": 220,
+    "brand_name": "Jazzamor",
+    "dates": "2014-10-12 - 2014-10-12",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 219,
+    "brand_name": "Club des Belugas",
+    "dates": "2014-10-02 - 2014-10-02",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 229,
+    "brand_name": "Новогодние елки",
+    "dates": "2015-01-02 - 2015-01-10",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 225,
+    "brand_name": "Цирк деда мороза 3",
+    "dates": "2014-12-19 - 2015-01-08",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 1,
+    "brand_name": "In Extremo",
+    "dates": "2015-04-19 - 2015-04-19",
+    "request_sum": "200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 26,
+    "brand_name": "Эпидемия Спб",
+    "dates": "2015-04-12 - 2015-04-12",
+    "request_sum": "33 333.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 600
+  },
+  {
+    "table_id": 51,
+    "brand_name": "The Matrixx",
+    "dates": "2015-06-05 - 2015-06-05",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 104,
+    "brand_name": "Lacrimosa",
+    "dates": "2015-11-01 - 2015-11-01",
+    "request_sum": "400 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 119,
+    "brand_name": "Steven Wilson",
+    "dates": "2016-02-15 - 2016-02-15",
+    "request_sum": "1 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 243,
+    "brand_name": "Scooter",
+    "dates": "2016-03-26 - 2016-03-26",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3750
+  },
+  {
+    "table_id": 242,
+    "brand_name": "De Phazz",
+    "dates": "2016-02-27 - 2016-02-27",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 83,
+    "brand_name": " Róisín Murphy (концерт вокалистки MOLOKO) ",
+    "dates": "2015-06-01 - 2015-06-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2750
+  },
+  {
+    "table_id": 241,
+    "brand_name": "Machine Gun Kelly",
+    "dates": "2015-11-10 - 2015-11-10",
+    "request_sum": "700 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 240,
+    "brand_name": "Adept",
+    "dates": "2015-09-20 - 2015-09-20",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 239,
+    "brand_name": "Asking Alexandria",
+    "dates": "2015-10-31 - 2015-10-31",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2200
+  },
+  {
+    "table_id": 256,
+    "brand_name": "Алиса, День рождения Кинчева, \nЗИМА'16",
+    "dates": "2016-12-01 - 2016-12-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1200
+  },
+  {
+    "table_id": 236,
+    "brand_name": "Гарик Сукачев ",
+    "dates": "2015-10-23 - 2015-10-23",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3200
+  },
+  {
+    "table_id": 170,
+    "brand_name": "Black Label Society",
+    "dates": "2015-11-18 - 2015-11-18",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1200
+  },
+  {
+    "table_id": 258,
+    "brand_name": "Аквариум ",
+    "dates": "2016-03-01 - 2016-03-01",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2800
+  },
+  {
+    "table_id": 30,
+    "brand_name": "Baseballs",
+    "dates": "2015-04-22 - 2015-04-22",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 96,
+    "brand_name": "Ноэл Галлахер  ",
+    "dates": "2015-06-16 - 2015-06-16",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 116,
+    "brand_name": "Сукачев Гарик",
+    "dates": "2015-10-23 - 2015-10-23",
+    "request_sum": "10 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 31,
+    "brand_name": "Baseballs",
+    "dates": "2015-04-23 - 2015-04-23",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 34,
+    "brand_name": "Dead By April",
+    "dates": "2015-02-28 - 2015-02-28",
+    "request_sum": "700 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 248,
+    "brand_name": "UNKLE",
+    "dates": "2016-02-06 - 2016-02-06",
+    "request_sum": "2 475 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 65,
+    "brand_name": "Tyler The Creator",
+    "dates": "2015-08-19 - 2015-08-19",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3500
+  },
+  {
+    "table_id": 169,
+    "brand_name": "IAMX",
+    "dates": "2015-12-05 - 2015-12-05",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1300
+  },
+  {
+    "table_id": 5,
+    "brand_name": "OK GO",
+    "dates": "2015-02-06 - 2015-02-06",
+    "request_sum": "65 648.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 6,
+    "brand_name": "Yann Tiersen",
+    "dates": "2015-02-08 - 2015-02-08",
+    "request_sum": "93 663.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 7,
+    "brand_name": "De Phazz",
+    "dates": "2015-03-01 - 2015-03-01",
+    "request_sum": "41 154.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 8,
+    "brand_name": "65daysofStatic",
+    "dates": "2015-03-27 - 2015-03-27",
+    "request_sum": "17 952.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 253,
+    "brand_name": "Алиса, Наш выбор Лучшее, ВЕСНА'16",
+    "dates": "2016-03-01 - 2016-03-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1200
+  },
+  {
+    "table_id": 19,
+    "brand_name": "Morcheeba",
+    "dates": "2015-03-13 - 2015-03-13",
+    "request_sum": "4 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 250,
+    "brand_name": "Saint Asonia",
+    "dates": "2015-11-22 - 2015-11-22",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 249,
+    "brand_name": "Saint Asonia",
+    "dates": "2015-11-21 - 2015-11-21",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 121,
+    "brand_name": "Lumen",
+    "dates": "2015-11-08 - 2015-11-08",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 218,
+    "brand_name": "Beth Hart",
+    "dates": "2014-11-09 - 2014-11-09",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 120,
+    "brand_name": "Lumen",
+    "dates": "2015-11-07 - 2015-11-07",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 209,
+    "brand_name": "Catharsis",
+    "dates": "2014-12-07 - 2014-12-07",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 124,
+    "brand_name": "Чапаев и Пустота",
+    "dates": "2015-11-06 - 2015-11-06",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1700
+  },
+  {
+    "table_id": 172,
+    "brand_name": "Frost Fest 2016: Lumen, Северный Флот, Бригадный Подряд, СЛОТ",
+    "dates": "2016-01-03 - 2016-01-03",
+    "request_sum": "398 253.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 215,
+    "brand_name": "Three Days Grace",
+    "dates": "2014-09-21 - 2014-09-21",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 115,
+    "brand_name": "W.A.S.P. презентация нового альбома",
+    "dates": "2015-09-08 - 2015-09-08",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 48,
+    "brand_name": "SCOOTER",
+    "dates": "2015-03-29 - 2015-03-29",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 22,
+    "brand_name": "АРИЯ",
+    "dates": "2015-04-25 - 2015-04-25",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1001
+  },
+  {
+    "table_id": 43,
+    "brand_name": "CENTR",
+    "dates": "2015-02-28 - 2015-02-28",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 212,
+    "brand_name": "Эпидемия",
+    "dates": "2014-10-17 - 2014-10-17",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 283,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 273,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 274,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 275,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 276,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 277,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 278,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 279,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 280,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 281,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 286,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 282,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 284,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 285,
+    "brand_name": "Котики и кошечки",
+    "dates": "2015-10-01 - 2015-11-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "70%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 13,
+    "brand_name": "Пикник Афиши",
+    "dates": "2015-07-25 - 2015-07-25",
+    "request_sum": "3 541 110.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 108,
+    "brand_name": "Валерий Леонтьев",
+    "dates": "2015-10-23 - 2015-10-23",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3750
+  },
+  {
+    "table_id": 92,
+    "brand_name": "Концерт к Юбилею Людмилы Гурченко (80 лет).",
+    "dates": "2015-10-21 - 2015-10-21",
+    "request_sum": "1 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 247,
+    "brand_name": "Pink Floyd Show UK",
+    "dates": "2016-03-07 - 2016-03-07",
+    "request_sum": "1 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 5000
+  },
+  {
+    "table_id": 163,
+    "brand_name": "Севара",
+    "dates": "2015-11-07 - 2015-11-07",
+    "request_sum": "600 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 112,
+    "brand_name": "Владимир Спиваков",
+    "dates": "2015-11-08 - 2015-11-08",
+    "request_sum": "2 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 228,
+    "brand_name": "Мельница. Рождественский концерт",
+    "dates": "2015-01-15 - 2015-01-15",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 68,
+    "brand_name": "Mario Biondi",
+    "dates": "2015-06-08 - 2015-06-08",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3500
+  },
+  {
+    "table_id": 162,
+    "brand_name": "Дмитрий Маликов",
+    "dates": "2015-11-06 - 2015-11-06",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 72,
+    "brand_name": "Брюно Пелитье",
+    "dates": "2015-12-10 - 2015-12-10",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 5200
+  },
+  {
+    "table_id": 71,
+    "brand_name": "Хибла Герзмава",
+    "dates": "2015-11-25 - 2015-11-25",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3200
+  },
+  {
+    "table_id": 21,
+    "brand_name": "КЕЙКО МАЦУИ",
+    "dates": "2015-03-26 - 2015-03-26",
+    "request_sum": "1 300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 252,
+    "brand_name": "Познер. Творческий вечер",
+    "dates": "2015-10-18 - 2015-10-18",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4550
+  },
+  {
+    "table_id": 69,
+    "brand_name": "День рождения Jazz Parking",
+    "dates": "2015-10-23 - 2015-10-23",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2900
+  },
+  {
+    "table_id": 70,
+    "brand_name": "Николай Носков (Акустика)",
+    "dates": "2015-11-14 - 2015-11-14",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3500
+  },
+  {
+    "table_id": 42,
+    "brand_name": "Титаник live (музыка из фильма), композитор Джеймс Хорнор",
+    "dates": "2015-06-06 - 2015-06-06",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 66,
+    "brand_name": "ВАЛЬПУРГИЕВА НОЧЬ\nБЕЗУМНЫЙ ДЕНЬ, ИЛИ ЖЕНИТЬБА ФИГАРО\nTOUT PAYE, ИЛИ ВСЁ ОПЛАЧЕНО\nКОРОЛЕВСКИЕ ИГРЫ\nБОРИС ГОДУНОВ\nАКВИТАНСКАЯ ЛЬВИЦА\nЛОЖЬ ВО СПАСЕНИЕ\nВА-БАНК\nШУТ БАЛАКИРЕВ\nПЕР ГЮНТ\nВИШНЁВЫЙ САД,\nНЕБЕСНЫЕ СТРАННИКИ",
+    "dates": "2015-03-01 - 2016-12-01",
+    "request_sum": "4 127 484.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 14,
+    "brand_name": "Усадьба Джаз",
+    "dates": "2015-06-10 - 2015-06-10",
+    "request_sum": "1 518 603.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 50,
+    "brand_name": "ДДТ",
+    "dates": "2015-04-24 - 2015-04-24",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 800
+  },
+  {
+    "table_id": 101,
+    "brand_name": "Алиса",
+    "dates": "2015-08-01 - 2015-08-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1750
+  },
+  {
+    "table_id": 254,
+    "brand_name": "Алиса, 25 лет альбому Шабаш, ЛЕТО'16",
+    "dates": "2016-06-01 - 2016-06-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 267,
+    "brand_name": "Звери ",
+    "dates": "2016-06-20 - 2016-06-20",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 86,
+    "brand_name": "Placebo",
+    "dates": "2015-07-04 - 2015-07-04",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 85,
+    "brand_name": "Royksopp.After Park Live",
+    "dates": "2015-06-20 - 2015-06-20",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 103,
+    "brand_name": "CENTR + Каспийский Груз",
+    "dates": "2015-07-03 - 2015-07-03",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 259,
+    "brand_name": "Аквариум ",
+    "dates": "2016-06-01 - 2016-06-01",
+    "request_sum": "4 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1700
+  },
+  {
+    "table_id": 265,
+    "brand_name": "Анабук",
+    "dates": "2016-06-15 - 2016-06-15",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 36,
+    "brand_name": "Звери",
+    "dates": "2015-06-06 - 2015-06-06",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 123,
+    "brand_name": "DMX",
+    "dates": "2015-10-15 - 2015-10-15",
+    "request_sum": "1 250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 58,
+    "brand_name": "Игромир",
+    "dates": "2015-10-01 - 2015-10-04",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 49,
+    "brand_name": "РОББИ УИЛЬЯМС",
+    "dates": "2015-04-09 - 2015-04-09",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 18,
+    "brand_name": "Вокруг Света",
+    "dates": "2015-07-01 - 2015-07-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 155,
+    "brand_name": "Девочки из календаря  (спек-ль репертуарный)",
+    "dates": "2016-01-04 - 2016-01-04",
+    "request_sum": "64 190.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 154,
+    "brand_name": "Тапер-шоу  (спек-ль репертуарный)",
+    "dates": "2016-01-03 - 2016-01-03",
+    "request_sum": "146 233.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 153,
+    "brand_name": "Ножницы  (спек-ль репертуарный)",
+    "dates": "2015-12-01 - 2016-01-08",
+    "request_sum": "340 856.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 152,
+    "brand_name": "Игра в правду  (спек-ль репертуарный)",
+    "dates": "2015-12-30 - 2016-01-05",
+    "request_sum": "229 179.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 151,
+    "brand_name": "Боинг-боинг  (спек-ль репертуарный)",
+    "dates": "2015-12-29 - 2016-01-07",
+    "request_sum": "405 384.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 150,
+    "brand_name": "История любви (спек-ль репертуарный)",
+    "dates": "2015-12-26 - 2016-01-02",
+    "request_sum": "556 503.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 156,
+    "brand_name": "Ladies night  (спек-ль репертуарный)",
+    "dates": "2015-12-27 - 2016-01-09",
+    "request_sum": "476 914.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 144,
+    "brand_name": "Мишель Легран: «Шербурские зонтики»",
+    "dates": "2016-01-04 - 2016-01-04",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 142,
+    "brand_name": "Тарья Турунен с рождественским акустическим концертом «Аве Мария»",
+    "dates": "2015-12-27 - 2015-12-27",
+    "request_sum": "2 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2581
+  },
+  {
+    "table_id": 143,
+    "brand_name": "«Zoltan Maga: из Будапешта с любовью»",
+    "dates": "2015-12-26 - 2015-12-26",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4159
+  },
+  {
+    "table_id": 59,
+    "brand_name": "Владимир Кузьмин",
+    "dates": "2015-05-29 - 2015-05-29",
+    "request_sum": "750 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 106,
+    "brand_name": "Apparat",
+    "dates": "2015-10-22 - 2015-10-22",
+    "request_sum": "330 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3200
+  },
+  {
+    "table_id": 91,
+    "brand_name": "Piaf Show -- Anne Carrere",
+    "dates": "2015-09-25 - 2015-09-25",
+    "request_sum": "700 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3800
+  },
+  {
+    "table_id": 87,
+    "brand_name": "Ленинград",
+    "dates": "2015-06-05 - 2015-06-05",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 32,
+    "brand_name": "Смоки Мо",
+    "dates": "2015-03-15 - 2015-03-15",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 179,
+    "brand_name": "Piaf Show ",
+    "dates": "2015-09-23 - 2015-09-23",
+    "request_sum": "260 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3100
+  },
+  {
+    "table_id": 33,
+    "brand_name": "МОТ",
+    "dates": "2015-03-27 - 2015-03-27",
+    "request_sum": "150 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 47,
+    "brand_name": "Квартет И",
+    "dates": "2015-03-29 - 2015-03-29",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 117,
+    "brand_name": "Tokio Hotel",
+    "dates": "2015-10-27 - 2015-10-27",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 45,
+    "brand_name": "ПИКНИК",
+    "dates": "2015-03-07 - 2015-03-07",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 46,
+    "brand_name": "Tango Pasion",
+    "dates": "2015-03-11 - 2015-03-11",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 53,
+    "brand_name": "Руки Вверх!",
+    "dates": "2015-11-04 - 2015-11-04",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 73,
+    "brand_name": "Fall Out Boy",
+    "dates": "2015-10-25 - 2015-10-25",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 173,
+    "brand_name": "Frost Fest 2016: Lumen, Louna, F.P.G., Бригадный Подряд",
+    "dates": "2016-01-04 - 2016-01-04",
+    "request_sum": "779 645.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 140,
+    "brand_name": "MEGADETH ",
+    "dates": "2015-11-04 - 2015-11-04",
+    "request_sum": "4 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2300
+  },
+  {
+    "table_id": 64,
+    "brand_name": "Kasabian",
+    "dates": "2015-07-14 - 2015-07-14",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 255,
+    "brand_name": "Алиса, новый альбом, ОСЕНЬ'16",
+    "dates": "2016-09-01 - 2016-09-01",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 216,
+    "brand_name": "Three Days Grace",
+    "dates": "2014-09-28 - 2014-09-28",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 166,
+    "brand_name": "HIM + Rasmus",
+    "dates": "2015-10-25 - 2015-10-25",
+    "request_sum": "2 615 930.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 168,
+    "brand_name": "L`One Сольный концерт",
+    "dates": "2015-10-10 - 2015-10-10",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 23,
+    "brand_name": "АРИЯ Фест 2015",
+    "dates": "2015-11-28 - 2015-11-29",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2250
+  },
+  {
+    "table_id": 16,
+    "brand_name": "Спасская Башня ",
+    "dates": "2015-09-05 - 2015-09-05",
+    "request_sum": "3 699 542.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 62,
+    "brand_name": "Geek picnic",
+    "dates": "2015-06-13 - 2015-06-14",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 122,
+    "brand_name": "DMX",
+    "dates": "2015-10-01 - 2015-10-01",
+    "request_sum": "1 250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 174,
+    "brand_name": "Frost Fest 2016: Lumen, Louna, Бригадный Подряд",
+    "dates": "2016-01-05 - 2016-01-05",
+    "request_sum": "88 209.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 2,
+    "brand_name": "Tarja Turunen",
+    "dates": "2015-05-26 - 2015-05-26",
+    "request_sum": "420 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 63,
+    "brand_name": "Китайский Цирк",
+    "dates": "2015-06-27 - 2015-06-28",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 171,
+    "brand_name": "Brainstorm",
+    "dates": "2015-11-15 - 2015-11-15",
+    "request_sum": "160 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 800
+  },
+  {
+    "table_id": 12,
+    "brand_name": "Шансон Года",
+    "dates": "2015-04-18 - 2015-04-18",
+    "request_sum": "1 985 696.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 76,
+    "brand_name": "Noize MC",
+    "dates": "2015-04-12 - 2015-04-12",
+    "request_sum": "100 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 131,
+    "brand_name": "Вечеринка Comedy Club (USB + музыканты)",
+    "dates": "2015-02-14 - 2015-02-14",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 4000
+  },
+  {
+    "table_id": 145,
+    "brand_name": "АК-47 -- 16.10.15",
+    "dates": "2015-10-16 - 2015-10-16",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 217,
+    "brand_name": "Dope",
+    "dates": "2014-09-30 - 2014-09-30",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 149,
+    "brand_name": "Тати -- 14.11.15",
+    "dates": "2015-11-14 - 2015-11-14",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 148,
+    "brand_name": "Вася Обломов  -- 27.08.15",
+    "dates": "2015-08-27 - 2015-08-27",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 147,
+    "brand_name": "Наргиз -- 26.09.15",
+    "dates": "2015-09-24 - 2015-09-24",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 233,
+    "brand_name": "Жанна Агузарова ",
+    "dates": "2015-11-30 - 2015-11-30",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 234,
+    "brand_name": "БИ-2",
+    "dates": "2016-02-06 - 2016-02-06",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2200
+  },
+  {
+    "table_id": 237,
+    "brand_name": "The Fall of Troy",
+    "dates": "2015-08-28 - 2015-08-28",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1300
+  },
+  {
+    "table_id": 245,
+    "brand_name": "Dope",
+    "dates": "2015-11-26 - 2015-11-26",
+    "request_sum": "650 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 146,
+    "brand_name": "Нервы -- 27.09.15",
+    "dates": "2015-09-27 - 2015-09-27",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 214,
+    "brand_name": "Черный обелиск",
+    "dates": "2014-12-13 - 2014-12-13",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 238,
+    "brand_name": "Silverstein",
+    "dates": "2015-10-15 - 2015-10-15",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 251,
+    "brand_name": "Премия \"Серебряная калоша\"",
+    "dates": "2015-11-26 - 2015-11-26",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 10000
+  },
+  {
+    "table_id": 266,
+    "brand_name": "Back to the 60",
+    "dates": "2016-07-18 - 2016-07-18",
+    "request_sum": "3 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1200
+  },
+  {
+    "table_id": 90,
+    "brand_name": "Bonobo (фестиваль)",
+    "dates": "2015-07-01 - 2015-07-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1300
+  },
+  {
+    "table_id": 227,
+    "brand_name": "Tyga",
+    "dates": "2014-11-22 - 2014-11-22",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 205,
+    "brand_name": "World Of Drum&Bass",
+    "dates": "2014-09-13 - 2014-09-13",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 74,
+    "brand_name": "World of Drum and Bass: SPOR, METRIK, AUDIO, MIND VORTEX, SS",
+    "dates": "2015-09-16 - 2015-09-16",
+    "request_sum": "1 800 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1700
+  },
+  {
+    "table_id": 75,
+    "brand_name": "L`one и и Тимати ",
+    "dates": "2015-05-29 - 2015-05-29",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 15,
+    "brand_name": "Дикая мята ",
+    "dates": "2015-06-28 - 2015-06-28",
+    "request_sum": "1 541 985.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 105,
+    "brand_name": "Макс Корж ",
+    "dates": "2015-11-01 - 2015-11-01",
+    "request_sum": "500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1750
+  },
+  {
+    "table_id": 222,
+    "brand_name": "Стас Старовойтов",
+    "dates": "2014-07-18 - 2014-07-18",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 221,
+    "brand_name": "Сергей Бабкин",
+    "dates": "2014-06-28 - 2014-06-28",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 109,
+    "brand_name": "Каста (Хамиль и Змей) + остальной инвентарь площадки (уже получили авансом)",
+    "dates": "2015-06-27 - 2015-06-27",
+    "request_sum": "90 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1900
+  },
+  {
+    "table_id": 17,
+    "brand_name": "Танковый биатлон",
+    "dates": "2015-08-04 - 2015-08-04",
+    "request_sum": "349 274.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 84,
+    "brand_name": "Comedy Club в Сочи - съемка",
+    "dates": "2015-06-01 - 2015-06-01",
+    "request_sum": "5 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 5000
+  },
+  {
+    "table_id": 102,
+    "brand_name": "Wu Tang Clan",
+    "dates": "2015-07-23 - 2015-07-23",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 157,
+    "brand_name": "DMX",
+    "dates": "2015-10-23 - 2015-10-23",
+    "request_sum": "1 500 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 201,
+    "brand_name": "Вячеслав Бутусов и Ю-Питер",
+    "dates": "2014-10-24 - 2014-10-24",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 200,
+    "brand_name": "Лампасы",
+    "dates": "2014-10-12 - 2014-10-12",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 193,
+    "brand_name": "Нервы",
+    "dates": "2014-09-20 - 2014-09-20",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 196,
+    "brand_name": "Little Big",
+    "dates": "2014-09-26 - 2014-09-26",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 199,
+    "brand_name": "Телевизор",
+    "dates": "2014-10-11 - 2014-10-11",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 192,
+    "brand_name": "Uma2Rman",
+    "dates": "2014-09-19 - 2014-09-19",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 198,
+    "brand_name": "Бобры",
+    "dates": "2014-10-04 - 2014-10-04",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 57,
+    "brand_name": "Триагрутрика",
+    "dates": "2015-03-07 - 2015-03-07",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 800
+  },
+  {
+    "table_id": 195,
+    "brand_name": "Mary McBride",
+    "dates": "2014-09-25 - 2014-09-25",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 204,
+    "brand_name": "Город 312",
+    "dates": "2014-12-05 - 2014-12-05",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 203,
+    "brand_name": "Триагрутрика",
+    "dates": "2014-11-07 - 2014-11-07",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 197,
+    "brand_name": "Jane Air",
+    "dates": "2014-09-27 - 2014-09-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 202,
+    "brand_name": "Korsика",
+    "dates": "2014-11-02 - 2014-11-02",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 194,
+    "brand_name": "Несчастный случай",
+    "dates": "2014-09-21 - 2014-09-21",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 271,
+    "brand_name": "Sochi Discovery World Aquarium",
+    "dates": "0001-01-01 - 0001-01-01",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 77,
+    "brand_name": "Юрий Антонов",
+    "dates": "2015-06-01 - 2015-06-01",
+    "request_sum": "750 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3300
+  },
+  {
+    "table_id": 61,
+    "brand_name": "Mooncake",
+    "dates": "2015-04-01 - 2015-04-12",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 44,
+    "brand_name": "Stand Up!",
+    "dates": "2015-03-07 - 2015-03-07",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 54,
+    "brand_name": "Limp Bizkit",
+    "dates": "2015-11-27 - 2015-11-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 82,
+    "brand_name": "РУСЛАН БЕЛЫЙ",
+    "dates": "2015-04-01 - 2015-04-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 79,
+    "brand_name": "НЕЗЛОБИН",
+    "dates": "2015-04-01 - 2015-04-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 80,
+    "brand_name": "ШАЛЯПИН",
+    "dates": "2015-04-01 - 2015-04-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 78,
+    "brand_name": "ГАЛЫГИН",
+    "dates": "2015-04-01 - 2015-04-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 81,
+    "brand_name": "ДМИТРИЙ РОМАНОВ",
+    "dates": "2015-04-01 - 2015-04-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 113,
+    "brand_name": "Градусы",
+    "dates": "2015-07-30 - 2015-07-30",
+    "request_sum": "200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 114,
+    "brand_name": "Пицца",
+    "dates": "2015-08-06 - 2015-08-06",
+    "request_sum": "200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1400
+  },
+  {
+    "table_id": 110,
+    "brand_name": "Kosheen. Концерт на крыше",
+    "dates": "2015-07-23 - 2015-07-23",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 111,
+    "brand_name": "Найк Борзов. Акустика. Концерт на крыше + остальной инвентарь орга (концерты на крышах в течение лета)",
+    "dates": "2015-06-26 - 2015-06-26",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 206,
+    "brand_name": "Yoav",
+    "dates": "2014-11-08 - 2014-11-08",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 246,
+    "brand_name": "Игорь Растеряев",
+    "dates": "2015-10-24 - 2015-10-24",
+    "request_sum": "200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 24,
+    "brand_name": "Черный Обелиск",
+    "dates": "2015-03-21 - 2015-03-21",
+    "request_sum": "100 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 400
+  },
+  {
+    "table_id": 213,
+    "brand_name": "Новогодняя Metal - елка",
+    "dates": "2015-01-01 - 2015-01-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 211,
+    "brand_name": "Эпидемия",
+    "dates": "2014-12-21 - 2014-12-21",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 210,
+    "brand_name": "Catharsis",
+    "dates": "2014-11-01 - 2014-11-01",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 208,
+    "brand_name": "Мара",
+    "dates": "2014-09-27 - 2014-09-27",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 207,
+    "brand_name": "Kid Ink",
+    "dates": "2014-10-26 - 2014-10-26",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 118,
+    "brand_name": "the Fratellis -- New Album",
+    "dates": "2016-02-19 - 2016-02-19",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2000
+  },
+  {
+    "table_id": 231,
+    "brand_name": "Вера Полозкова",
+    "dates": "2015-11-08 - 2015-11-08",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1900
+  },
+  {
+    "table_id": 230,
+    "brand_name": "Вера Полозкова",
+    "dates": "2015-11-07 - 2015-11-07",
+    "request_sum": "250 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1900
+  },
+  {
+    "table_id": 269,
+    "brand_name": "Noize MC новогодний",
+    "dates": "2016-01-02 - 2016-01-02",
+    "request_sum": "1 200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1800
+  },
+  {
+    "table_id": 270,
+    "brand_name": "Therr Maitz",
+    "dates": "2016-03-11 - 2016-03-11",
+    "request_sum": null,
+    "online_sales": "50%",
+    "average_ticket": 2100
+  },
+  {
+    "table_id": 107,
+    "brand_name": "#avg x TroyBoi",
+    "dates": "2015-06-13 - 2015-06-13",
+    "request_sum": "300 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1000
+  },
+  {
+    "table_id": 180,
+    "brand_name": "Glass Animals",
+    "dates": "2015-09-05 - 2015-09-05",
+    "request_sum": "390 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 178,
+    "brand_name": "Alesana",
+    "dates": "2015-09-03 - 2015-09-03",
+    "request_sum": "162 500.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 29,
+    "brand_name": "Серебряная Свадьба",
+    "dates": "2014-05-31 - 2014-05-31",
+    "request_sum": "100 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 500
+  },
+  {
+    "table_id": 28,
+    "brand_name": "Catharsis",
+    "dates": "2014-05-23 - 2014-05-23",
+    "request_sum": "100 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 450
+  },
+  {
+    "table_id": 27,
+    "brand_name": "Эпидемия",
+    "dates": "2015-04-18 - 2015-04-19",
+    "request_sum": "33 333.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1500
+  },
+  {
+    "table_id": 25,
+    "brand_name": "Влади (Каста)",
+    "dates": "2015-04-03 - 2015-04-03",
+    "request_sum": "100 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 800
+  },
+  {
+    "table_id": 98,
+    "brand_name": "Каста",
+    "dates": "2015-07-23 - 2015-07-23",
+    "request_sum": "800 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 1600
+  },
+  {
+    "table_id": 97,
+    "brand_name": "Ёлка",
+    "dates": "2015-07-09 - 2015-07-09",
+    "request_sum": "1 200 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3300
+  },
+  {
+    "table_id": 99,
+    "brand_name": "Ночные Снайперы",
+    "dates": "2015-07-31 - 2015-07-31",
+    "request_sum": "1 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 2500
+  },
+  {
+    "table_id": 100,
+    "brand_name": "Ленинград",
+    "dates": "2015-07-16 - 2015-07-16",
+    "request_sum": "2 000 000.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 5000
+  },
+  {
+    "table_id": 88,
+    "brand_name": "Muse park Live",
+    "dates": "2015-06-19 - 2015-06-19",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 3000
+  },
+  {
+    "table_id": 264,
+    "brand_name": "Бокс Рой Джонс против Энцо Маккаринелли",
+    "dates": "2015-12-12 - 2015-12-12",
+    "request_sum": "0.00 руб",
+    "online_sales": "50%",
+    "average_ticket": 14000
+  }
+  ]
+}

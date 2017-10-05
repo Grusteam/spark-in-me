@@ -1,0 +1,190 @@
+{
+	"response": {
+		"method": {
+			"name": "getBlogObjects",
+			"version": 1
+		},
+		"data": {
+			"globals": {
+				"nav_items": [{
+					"edit": 1,
+					"value": "",
+					"key": "home",
+					"title": "Главная",
+					"type": "text",
+					"children": false
+				}, {
+					"edit": 1,
+					"value": "about",
+					"key": "about",
+					"title": "О нас",
+					"type": "text",
+					"children": false
+				}, {
+					"edit": 1,
+					"value": "contact",
+					"key": "contact",
+					"title": "Контакты",
+					"type": "text",
+					"children": false
+				}],
+				"menu_title": {
+					"edit": 1,
+					"value": "Tears lost in rain",
+					"key": "menu-title",
+					"title": "Menu Title",
+					"type": "text",
+					"children": false
+				},
+				"footer_text": {
+					"edit": 1,
+					"value": "Tears lost in rain - from here to infinity",
+					"key": "footer-text",
+					"title": "Footer Text",
+					"type": "text",
+					"children": false
+				},
+				"site_title": {
+					"edit": 1,
+					"value": "Space sanctuary",
+					"key": "site-title",
+					"title": "Site Title",
+					"type": "text",
+					"children": false
+				},
+				"pages": {
+					"home": {
+						"_id": "563c1def1ae7fe0f41000043",
+						"bucket": "563c1dbe1ae7fe0f41000036",
+						"slug": "home",
+						"title": "Home",
+						"content": "<p>This is some home page content 2...<\/p>",
+						"hero": {
+							"edit": 1,
+							"value": "45904530-8449-11e5-adfe-014902af5eff-space_11.jpg",
+							"key": "hero",
+							"title": "Hero",
+							"type": "file",
+							"children": false,
+							"url": "http:\/\/pics.spark-in.me\/upload\/708fa0a94a7133e0b730dca9639b7184.png",
+							"imgix_url": "http:\/\/pics.spark-in.me\/upload\/708fa0a94a7133e0b730dca9639b7184.png"
+						},
+						"headline": {
+							"edit": 1,
+							"value": "Spark in me",
+							"key": "headline",
+							"title": "Headline",
+							"type": "text",
+							"children": false
+						},
+						"subheadline": {
+							"edit": 1,
+							"value": "All these things will be lost like tears in rain",
+							"key": "subheadline",
+							"title": "Subheadline",
+							"type": "text",
+							"children": false
+						},
+						"type_slug": "page",
+						"created": "2015-11-06T03:26:39.539Z",
+						"modified": "2015-12-29T03:57:55.322Z"
+					},
+					"about": {
+						"_id": "563c1def1ae7fe0f41000047",
+						"bucket": "563c1dbe1ae7fe0f41000036",
+						"slug": "about",
+						"title": "About",
+						"content": "<p>Коллективный блог набора авторов, которые хотят публиковать свои мысли в интернете, но готовые решения их не устраивают. Использует (или будет использовать)&nbsp;следующие технические фичи:<\/p><ul><li>Сайт изоморфный (что важно для индексации), написан на react.js по <span style=\"text-decoration: underline;\"><a href=\"&quot;https:\/\/freelansim.ru\/tasks\/163655&quot;\">гайду<\/a><\/span>;<\/li><li>АПИ и CMS - самописные - Postgres + PHP + Limitless (фреймворк для админок);<\/li><li>Сайтмап;<\/li><li>Поскольку сайт изоморфный, то по идее все страницы должны рано или поздно попасть в индекс;<\/li><li>Возможностям развития нет предела - теги, подборки, авторы, рассылки;<\/li><li>SEO прошивка (schema.org, ld-json) - все эти фишки есть уже виде готовых библиотек, устанвливаемых через npm (!);<\/li><\/ul><p>&nbsp;Готовые решения (на момент выбора решения - конец 2016) не устраивали по ряду причин:<\/p><ul><li>Заранее сложная доработка фич + тарифы начинаются от десятков долларов в месяц&nbsp;(CMS, blogpost etc);<\/li><li>Закрытый исходный код и открытое коммьюнити разработчиков средней руки (WordPress и подобные) - долго вносить правки;<\/li><li>Закрытое все (Wix) - относительно дорого и нет возможностей расширения, дарим контент;<\/li><li>ЖЖ - умирающий проект;<\/li><li>Medium, Tumblr итп - дарим свой контент. По идее площадки такого рода должны давать трафик, но они преследуют свои интересы (что закономерно);<\/li><\/ul><p>&nbsp;Если хотите присоединиться - следуйте в раздел контакты.<\/p><p>&nbsp;<\/p>",
+						"hero": {
+							"edit": 1,
+							"value": "99e55210-8449-11e5-adfe-014902af5eff-steamworkshop_webupload_previewfile_327002106_preview.jpg",
+							"key": "hero",
+							"title": "Hero",
+							"type": "file",
+							"children": false,
+							"url": "http:\/\/pics.spark-in.me\/upload\/82afd806610aa29311bc2c9e24bccb30.jpg",
+							"imgix_url": "http:\/\/pics.spark-in.me\/upload\/82afd806610aa29311bc2c9e24bccb30.jpg"
+						},
+						"headline": {
+							"edit": 1,
+							"value": "Хотите написать нам?",
+							"key": "subheadline",
+							"title": "Subheadline",
+							"type": "text",
+							"children": false
+						},
+						"subheadline": {
+							"edit": 1,
+							"value": "Или стать автором?",
+							"key": "subheadline",
+							"title": "Subheadline",
+							"type": "text",
+							"children": false
+						},
+						"type_slug": "page",
+						"created": "2015-11-06T03:26:39.542Z",
+						"modified": "2015-11-06T06:19:34.580Z"
+					},
+					"contact": {
+						"_id": "563c1def1ae7fe0f41000049",
+						"bucket": "563c1dbe1ae7fe0f41000036",
+						"slug": "contact",
+						"title": "Contact",
+						"content": "<div style=\"text-align: center;\"><span style=\"line-height: 1.42857;\">Нравятся идеи? &nbsp;Давайте обсудим по адресу <\/span><a href=\"mailto:aveysov@gmail.com\" style=\"line-height: 1.42857; background-color: rgb(255, 255, 255);\">aveysov@gmail.com<\/a><\/div>",
+						"metafields": {
+							"edit": 1,
+							"value": "0e2445e0-844b-11e5-adfe-014902af5eff-deep_space_nebula_by_hameed.jpg",
+							"key": "hero",
+							"title": "Hero",
+							"type": "file",
+							"children": false,
+							"url": "https:\/\/cosmicjs.com\/uploads\/0e2445e0-844b-11e5-adfe-014902af5eff-deep_space_nebula_by_hameed.jpg",
+							"imgix_url": "https:\/\/cosmicjs.imgix.net\/0e2445e0-844b-11e5-adfe-014902af5eff-deep_space_nebula_by_hameed.jpg"
+						},
+						"subheadline": {
+							"edit": 1,
+							"value": "Если хотите пообщаться или поделиться идеями",
+							"key": "subheadline",
+							"title": "Subheadline",
+							"type": "text",
+							"children": false
+						},
+						"hero": {
+							"edit": 1,
+							"value": "http:\/\/pics.spark-in.me\/upload\/6135d35d3eaec48e6225d0b8271c7f7e.jpg",
+							"key": "hero",
+							"title": "Hero",
+							"type": "file",
+							"children": false,
+							"url": "http:\/\/pics.spark-in.me\/upload\/6135d35d3eaec48e6225d0b8271c7f7e.jpg",
+							"imgix_url": "http:\/\/pics.spark-in.me\/upload\/6135d35d3eaec48e6225d0b8271c7f7e.jpg"
+						},
+						"headline": {
+							"edit": 1,
+							"value": "Напишите нам",
+							"key": "headline",
+							"title": "Headline",
+							"type": "text",
+							"children": false
+						},
+						"type_slug": "page",
+						"created": "2015-11-06T03:26:39.543Z",
+						"modified": "2015-11-06T06:08:00.568Z"
+					}
+				}
+			},
+			"social": {
+				"telegram": {
+					"edit": 1,
+					"value": "https:\/\/t.me\/snakers4",
+					"key": "telegram",
+					"title": "Telegram",
+					"type": "text",
+					"children": false
+				}
+			}
+		},
+		"is_null_response": "false",
+		"message": "Valid data returned"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "Disqus",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./Disqus.js"
+}

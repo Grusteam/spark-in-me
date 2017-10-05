@@ -1,0 +1,74 @@
+body
+{
+	background-color: #F5F5F5;
+}
+
+#chart
+{
+	display: none;
+}
+
+#progress
+{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+td.main
+{
+	border: solid 1px Gray;
+	background-color: White;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td
+{
+	text-align: left;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+div.logo
+{
+	float: left;
+	padding-right: 10px;
+	margin-left: -1px;
+}
+
+/* SVG */
+
+circle.node
+{
+	stroke: #6E6F9C;
+	stroke-width: 1.5px;
+	background-color: White;
+}
+
+.nodetext
+{
+	pointer-events: none;
+	font: 12px sans-serif;
+}
+
+line.link
+{
+	stroke: #ddd;
+	stroke-opacity: .6;
+}
+
+/* SOCIAL */
+
+div.share42init
+{
+	position: absolute;
+	left: 23px;
+	display: none;
+}
+
+div.share42init div
+{
+	padding-bottom: 5px;
+}
