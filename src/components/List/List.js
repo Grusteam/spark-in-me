@@ -46,10 +46,11 @@ class TagPanel extends React.Component {
 
 class Announcement extends React.Component {
 	render() {
-		const item = this.props.item;
+		const
+			{item, position} = this.props;
 
 		return (
-			<div className={s.post} data-id={item.article_id}>
+			<div className={s.post} data-position={position} ref={'article_' + position} data-id={item.article_id}>
 				<a href={item.main_picture} target="_blank"><span className={s.postImg}><img src={item.feed_picture} alt="" /></span></a>
 				<Link to={'/post/' + item.slug}>
 					<h2 className={s.postTitle} >{item.title}</h2>
@@ -78,17 +79,28 @@ class List extends React.Component {
 	constructor(props) {
 		super(props);
 
+		this.sliderHeight = 200;
+		this.articles = this.props.data.posts;
+		this.articleCount = this.articles.length;
+
 		this.state = {
 			chunkStep: 10,
 			chunkLength: 10,
-			pager: true
+			pager: true,
+			pagerTechValue: this.articleCount,
+			pagerRealValue: 0,
+			feedStartPosition: 0,
+			feedEndPosition: 10,
 		};
 
 		this.updateChunkLength = this.updateChunkLength.bind(this);
+		this.handlePagerInputChange = this.handlePagerInputChange.bind(this);
+		this.scrollAction = this.scrollAction.bind(this);
 	}
 
 	componentWillMount() {
  		this.checkPager();
+ 		this.createChunk();
 	}
 
 	componentWillReceiveProps() {
@@ -100,8 +112,34 @@ class List extends React.Component {
 		this.checkPager();
 	}
 
+	componentDidMount() {
+		window.addEventListener('scroll', this.scrollAction);
+	}
+
+	scrollAction(e) {
+		const
+			{ articlesContainer } = this.refs,
+			containerSize = articlesContainer.getBoundingClientRect(),
+			viewHeight = window.innerHeight;
+
+		// for (let i = 0; i < chunk.length; i++) {
+		// 	const
+		// 		coords = this.refs['article_' + i].getBoundingClientRect();
+
+		// 	console.log('coords', coords);
+		// }
+
+		console.log('xxx', this.refs);
+
+		// console.log('window.scrollY', window.scrollY);
+		// console.log('articlesContainer', articlesContainer);
+		console.log('containerSize', containerSize);
+		console.log('viewHeight', viewHeight);
+	// 	console.log('e', e);
+	}
+
 	checkPager() {
-		if (this.state.chunkLength >= this.props.data.posts.length) {
+		if (this.state.chunkLength >= this.articleCount) {
 			this.setState({
 				pager: false
 			});
@@ -113,7 +151,23 @@ class List extends React.Component {
 	}
 
 	createChunk() {
-		chunk = this.props.data.posts.slice(0, this.state.chunkLength);
+		// chunk = this.articles.slice(this.state.chunkLength - 10, this.state.chunkLength);
+		const {feedStartPosition, feedEndPosition} = this.state;
+		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
+	}
+
+	upScroll() {
+		const {feedStartPosition, feedEndPosition} = this.state;
+		if (feedStartPosition > 0) {
+			chunk = this.articles.slice(feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0, feedEndPosition + 10 <= this.articleCount ? feedEndPosition + 10 : this.articleCount - 1);
+		}
+	}
+
+	downScroll() {
+		const {feedStartPosition, feedEndPosition} = this.state;
+		if (feedStartPosition < this.articleCount) {
+			chunk = this.articles.slice(feedStartPosition + 10 < this.articleCount - 10 ? feedStartPosition + 10 : this.articleCount - 10, feedEndPosition + 10 < this.articleCount ? feedEndPosition + 10 : this.articleCount - 1);
+		}
 	}
 
 	updateChunkLength() {
@@ -121,7 +175,7 @@ class List extends React.Component {
 			chunkLength: this.state.chunkLength + this.state.chunkStep
 		});
 
-		if (this.state.chunkLength + this.state.chunkStep >= this.props.data.posts.length) {
+		if (this.state.chunkLength + this.state.chunkStep >= this.articleCount) {
 			this.setState({
 				pager: false
 			});
@@ -136,7 +190,7 @@ class List extends React.Component {
 			"November", "December"
 		];
 
-		this.props.data.posts.map((item) => {
+		this.articles.map((item) => {
 			let d = new Date(item.published ? item.published : item.publish_time);
 			item.published = monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 		});
@@ -150,17 +204,38 @@ class List extends React.Component {
 		}
 	}
 
-	render() {
-		this.createChunk();
+	handlePagerInputChange(e) {
+		const
+			domEl = e.target,
+			val = domEl.value,
+			result = this.articleCount - val,
+			bank = result % 10;
 
-		if (this.state.chunkLength >= this.props.data.posts.length) {
+		this.setState({
+			pagerTechValue: val,
+			pagerRealValue: result,
+			chunkLength: result < 10 ? 10 : result - result % 10 + 10
+		});
+
+		// console.log('val', result);
+		// console.log('window.scrollY', window.scrollTo(0, bank * 555));
+		// console.log('this.refs.myRef', this.refs.myRef);
+	}
+
+	render() {
+		if (this.state.chunkLength >= this.articleCount) {
 				this.state.pager = false;
 		} else {
 				this.state.pager = true;
 		}
 
-		const tags = groupBy(this.props.data.tags || [], 'att_title');
-		const grouped_tags = Object.keys(tags).map((key) => {
+		const
+			{ pagerTechValue, pagerRealValue } = this.state,
+			tags = groupBy(this.props.data.tags || [], 'att_title'),
+			shiftValue = 10;
+
+		const
+			grouped_tags = Object.keys(tags).map((key) => {
 			return {
 				title: key,
 				tags: tags[key],
@@ -191,10 +266,28 @@ class List extends React.Component {
 								})}
 							</div>
 
-							{chunk.map((item) => {
-								if (item.article_id )
-								return <Announcement item={item} key={item.article_id + Math.random()} />
-							})}
+
+							<div className={s.slider} style={{height: this.sliderHeight}}>
+								<input
+									type="range"
+									min="0"
+									max={this.articleCount}
+									value={pagerTechValue}
+									onChange={this.handlePagerInputChange}
+								/>
+								<div className={s.slider__container}>
+									<div className={s.slider__value} style={{top: ((this.sliderHeight - shiftValue) * pagerRealValue / this.articleCount)}}>
+										{pagerRealValue}
+									</div>
+								</div>
+							</div>
+
+							<div ref="articlesContainer" className={s.articles}>
+								{chunk.map((item, i) => {
+									if (item.article_id )
+									return <Announcement position={i} item={item} key={item.article_id + Math.random()} />
+								})}
+							</div>
 
 							<Pager vis={this.state.pager} handler={this.updateChunkLength}/>
 						</div>

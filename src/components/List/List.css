@@ -153,6 +153,43 @@
 	font-style: italic;
 }
 
+.slider {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 100;
+
+	&__container {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		background-color: green;
+		height: 100%;
+		width: 20px;
+	}
+
+	&__value {
+		position: relative;
+		// background-color: red;
+		height: 10px;
+		line-height: 10px;
+		color: red;
+	}
+
+	input[type=range] {
+		-webkit-appearance: slider-vertical;
+		writing-mode: bt-lr;
+		width: 20px;
+		height: 100%;
+		
+	}
+}
+
+.articles {
+	background-color: blue;
+	padding: 1px;
+}
+
 @media only screen and (min-width: 767px) {
 	.postTitle {
 		font-size: 36px;
