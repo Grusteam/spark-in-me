@@ -50,7 +50,7 @@ class Announcement extends React.Component {
 			{item, position} = this.props;
 
 		return (
-			<div className={s.post} data-position={position} ref={'article_' + position} data-id={item.article_id}>
+			<div className={s.post} data-position={position} data-id={item.article_id}>
 				<a href={item.main_picture} target="_blank"><span className={s.postImg}><img src={item.feed_picture} alt="" /></span></a>
 				<Link to={'/post/' + item.slug}>
 					<h2 className={s.postTitle} >{item.title}</h2>
@@ -120,22 +120,32 @@ class List extends React.Component {
 		const
 			{ articlesContainer } = this.refs,
 			containerSize = articlesContainer.getBoundingClientRect(),
-			viewHeight = window.innerHeight;
+			viewHeight = window.innerHeight,
+			articlesHeight = articlesContainer.clientHeight,
+			articlesCount = articlesContainer.childNodes.length,
+			articlesContainerSize = articlesContainer.scrollHeight,
+			toEnd = articlesContainerSize - (articlesContainer.scrollTop + articlesHeight),
+			articlesOffset = articlesContainer.offsetTop;
 
-		// for (let i = 0; i < chunk.length; i++) {
-		// 	const
-		// 		coords = this.refs['article_' + i].getBoundingClientRect();
+			console.log(articlesHeight);
+			console.log(articlesCount);
+			console.log(articlesContainerSize);
+			console.log(toEnd);
+			console.log(articlesOffset);
 
-		// 	console.log('coords', coords);
+		// let indexOnTopTask;
+		// for (var i = 0; i < articlesContainer.childNodes.length; i++) {
+
+		// 	if (articlesContainer.childNodes[i].offsetTop - articlesOffset >= articlesContainer.scrollTop) {
+		// 		indexOnTopTask = i;
+		// 		break;
+		// 	}
 		// }
 
-		console.log('xxx', this.refs);
-
-		// console.log('window.scrollY', window.scrollY);
-		// console.log('articlesContainer', articlesContainer);
-		console.log('containerSize', containerSize);
-		console.log('viewHeight', viewHeight);
-	// 	console.log('e', e);
+		// const
+		// 	objectOnTopTask = articlesContainer.childNodes[indexOnTopTask],
+		// 	topDay = articlesContainer.childNodes[0],
+		// 	bottomDay = articlesContainer.childNodes[articlesCount - 1];
 	}
 
 	checkPager() {
@@ -285,7 +295,7 @@ class List extends React.Component {
 							<div ref="articlesContainer" className={s.articles}>
 								{chunk.map((item, i) => {
 									if (item.article_id )
-									return <Announcement position={i} item={item} key={item.article_id + Math.random()} />
+									return <Announcement position={i} item={item} key={i} />
 								})}
 							</div>
 
