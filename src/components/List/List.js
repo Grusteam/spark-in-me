@@ -5,6 +5,7 @@ import s from './List.css';
 import Link from '../Link';
 import Pager from '../Pager';
 import { groupBy } from '../../core/groupBy';
+import _ from 'lodash';
 
 class Tag extends React.Component {
 	render() {
@@ -50,10 +51,10 @@ class Announcement extends React.Component {
 			{item, position} = this.props;
 
 		return (
-			<div className={s.post} data-position={position} data-id={item.article_id}>
+			<div className={s.post} data-position={position} data-bulk={item.posInBulk} data-id={item.article_id}>
 				<a href={item.main_picture} target="_blank"><span className={s.postImg}><img src={item.feed_picture} alt="" /></span></a>
 				<Link to={'/post/' + item.slug}>
-					<h2 className={s.postTitle} >{item.title}</h2>
+					<h2 className={s.postTitle} >{1 + +item.posInBulk/*item.title*/}</h2>
 					<h3 className={s.postSubtitle}  >{item.subtitle}</h3>
 				</Link>
 				<p className={s.postMeta} >Posted&nbsp;by&nbsp;
@@ -81,20 +82,24 @@ class List extends React.Component {
 
 		this.sliderHeight = 200;
 		this.articles = this.props.data.posts;
-		this.articleCount = this.articles.length;
+		this.articlesCount = this.articles.length;
+
+		_.forEach(this.articles, function(o, i) {
+			o.posInBulk = i;
+		});
 
 		this.state = {
 			chunkStep: 10,
 			chunkLength: 10,
 			pager: true,
-			pagerTechValue: this.articleCount,
-			pagerRealValue: 0,
+			pagerExpressValue: 0,
 			feedStartPosition: 0,
 			feedEndPosition: 10,
 		};
 
 		this.updateChunkLength = this.updateChunkLength.bind(this);
 		this.handlePagerInputChange = this.handlePagerInputChange.bind(this);
+		this.handlePagerInputRelease = this.handlePagerInputRelease.bind(this);
 		this.scrollAction = this.scrollAction.bind(this);
 	}
 
@@ -116,40 +121,8 @@ class List extends React.Component {
 		window.addEventListener('scroll', this.scrollAction);
 	}
 
-	scrollAction(e) {
-		const
-			{ articlesContainer } = this.refs,
-			containerSize = articlesContainer.getBoundingClientRect(),
-			viewHeight = window.innerHeight,
-			articlesHeight = articlesContainer.clientHeight,
-			articlesCount = articlesContainer.childNodes.length,
-			articlesContainerSize = articlesContainer.scrollHeight,
-			toEnd = articlesContainerSize - (articlesContainer.scrollTop + articlesHeight),
-			articlesOffset = articlesContainer.offsetTop;
-
-			console.log(articlesHeight);
-			console.log(articlesCount);
-			console.log(articlesContainerSize);
-			console.log(toEnd);
-			console.log(articlesOffset);
-
-		// let indexOnTopTask;
-		// for (var i = 0; i < articlesContainer.childNodes.length; i++) {
-
-		// 	if (articlesContainer.childNodes[i].offsetTop - articlesOffset >= articlesContainer.scrollTop) {
-		// 		indexOnTopTask = i;
-		// 		break;
-		// 	}
-		// }
-
-		// const
-		// 	objectOnTopTask = articlesContainer.childNodes[indexOnTopTask],
-		// 	topDay = articlesContainer.childNodes[0],
-		// 	bottomDay = articlesContainer.childNodes[articlesCount - 1];
-	}
-
 	checkPager() {
-		if (this.state.chunkLength >= this.articleCount) {
+		if (this.state.chunkLength >= this.articlesCount) {
 			this.setState({
 				pager: false
 			});
@@ -160,32 +133,12 @@ class List extends React.Component {
 		}
 	}
 
-	createChunk() {
-		// chunk = this.articles.slice(this.state.chunkLength - 10, this.state.chunkLength);
-		const {feedStartPosition, feedEndPosition} = this.state;
-		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
-	}
-
-	upScroll() {
-		const {feedStartPosition, feedEndPosition} = this.state;
-		if (feedStartPosition > 0) {
-			chunk = this.articles.slice(feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0, feedEndPosition + 10 <= this.articleCount ? feedEndPosition + 10 : this.articleCount - 1);
-		}
-	}
-
-	downScroll() {
-		const {feedStartPosition, feedEndPosition} = this.state;
-		if (feedStartPosition < this.articleCount) {
-			chunk = this.articles.slice(feedStartPosition + 10 < this.articleCount - 10 ? feedStartPosition + 10 : this.articleCount - 10, feedEndPosition + 10 < this.articleCount ? feedEndPosition + 10 : this.articleCount - 1);
-		}
-	}
-
 	updateChunkLength() {
 		this.setState({
 			chunkLength: this.state.chunkLength + this.state.chunkStep
 		});
 
-		if (this.state.chunkLength + this.state.chunkStep >= this.articleCount) {
+		if (this.state.chunkLength + this.state.chunkStep >= this.articlesCount) {
 			this.setState({
 				pager: false
 			});
@@ -214,33 +167,144 @@ class List extends React.Component {
 		}
 	}
 
+	createChunk() {
+		// chunk = this.articles.slice(this.state.chunkLength - 10, this.state.chunkLength);
+		const {feedStartPosition, feedEndPosition} = this.state;
+		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
+	}
+
 	handlePagerInputChange(e) {
 		const
 			domEl = e.target,
 			val = domEl.value,
-			result = this.articleCount - val,
-			bank = result % 10;
+			bank = val % 10;
 
 		this.setState({
-			pagerTechValue: val,
-			pagerRealValue: result,
-			chunkLength: result < 10 ? 10 : result - result % 10 + 10
+			pagerExpressValue: val,
 		});
 
-		// console.log('val', result);
-		// console.log('window.scrollY', window.scrollTo(0, bank * 555));
-		// console.log('this.refs.myRef', this.refs.myRef);
+	}
+
+	handlePagerInputRelease(e) {
+		const
+			domEl = e.target,
+			val = +domEl.value,
+			feedStartPosition = val - 4 >= 0 ? val - 4 : 0,
+			feedEndPosition = feedStartPosition + 9 <= this.articlesCount ? feedStartPosition + 9 : this.articlesCount;
+
+		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
+	
+		this.setState({
+			feedStartPosition,
+			feedEndPosition,
+		});
+
+		setTimeout(() => {
+			const
+				{ articlesContainer } = this.refs,
+				allArticles = articlesContainer.childNodes,
+				target = allArticles[4],
+				size = target.getBoundingClientRect();
+
+
+			window.scrollTo(0, window.pageYOffset + size.top);
+		}, 0);
+	}
+
+	scrollAction(e) {
+		const
+			{ articlesContainer } = this.refs,
+			sizes = articlesContainer.getBoundingClientRect(),
+			allArticles = articlesContainer.childNodes,
+			nearBoundry = 300,
+			screenSize = window.innerHeight,
+			nearToTop = sizes.top < 0 && -sizes.top < nearBoundry,
+			nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;
+
+		// console.log('sizes', sizes);
+
+		let indexOnTopArticle;
+		for (var i = 0; i < allArticles.length; i++) {
+
+			const
+				elSize = allArticles[i].getBoundingClientRect();
+
+			if (elSize.top + elSize.height > 0) {
+				indexOnTopArticle = i;
+				break;
+			}
+		}
+
+		const
+			articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,
+			bulkPos = +articleOnTop.dataset.bulk,
+			topArticle = allArticles[0],
+			bottomArticle = allArticles[allArticles.length - 1];
+
+		// nearToTop && console.log('nearToTop');
+		nearToTop && this.upScroll(bulkPos);
+		nearToEnd && this.downScroll();
+		// console.log('articleOnTop', articleOnTop);
+		// console.log('indexOnTopArticle', indexOnTopArticle);
+		// console.log('bulkPos', bulkPos);
+
+		this.setState({
+			pagerExpressValue: bulkPos
+		});
+	}
+
+	upScroll(bulkPos) {
+		const
+			{feedStartPosition, feedEndPosition} = this.state,
+			newFeedStartPosition = feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0;
+
+		if (feedStartPosition > 0) {
+			chunk = this.articles.slice(newFeedStartPosition, feedEndPosition);
+
+			this.setState({
+				feedStartPosition: newFeedStartPosition,
+			});
+
+			setTimeout(() => {
+				const
+					{ articlesContainer } = this.refs,
+					allArticles = articlesContainer.childNodes,
+					target = _.find(allArticles, function(o) { return o.dataset.bulk == bulkPos; }),
+					size = target.getBoundingClientRect();
+
+				console.log('target', target, size.top);
+				console.log('bulkPos', bulkPos);
+				console.log('window.offsetTop, size.top', window.pageYOffset, size.top);
+
+				window.scrollTo(0, window.pageYOffset + size.top - size.height);
+			}, 0);
+		}
+	}
+
+	downScroll() {
+		const
+			{feedStartPosition, feedEndPosition} = this.state,
+			newFeedEndPosition = feedEndPosition + 10 < this.articlesCount ? feedEndPosition + 10 : this.articlesCount;
+		
+		if (feedEndPosition < this.articlesCount) {
+			chunk = this.articles.slice(feedStartPosition, newFeedEndPosition);
+		}
+
+		this.setState({
+			feedEndPosition: newFeedEndPosition,
+		});
 	}
 
 	render() {
-		if (this.state.chunkLength >= this.articleCount) {
+
+		if (this.state.chunkLength >= this.articlesCount) {
 				this.state.pager = false;
 		} else {
 				this.state.pager = true;
 		}
 
 		const
-			{ pagerTechValue, pagerRealValue } = this.state,
+			{ pagerExpressValue, chunkLength } = this.state,
 			tags = groupBy(this.props.data.tags || [], 'att_title'),
 			shiftValue = 10;
 
@@ -281,13 +345,14 @@ class List extends React.Component {
 								<input
 									type="range"
 									min="0"
-									max={this.articleCount}
-									value={pagerTechValue}
+									max={this.articlesCount - 1}
+									value={pagerExpressValue}
 									onChange={this.handlePagerInputChange}
+									onMouseUp={this.handlePagerInputRelease}
 								/>
 								<div className={s.slider__container}>
-									<div className={s.slider__value} style={{top: ((this.sliderHeight - shiftValue) * pagerRealValue / this.articleCount)}}>
-										{pagerRealValue}
+									<div className={s.slider__value} style={{top: ((this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount)}}>
+										{(+pagerExpressValue + 1) + '/' + this.articlesCount}
 									</div>
 								</div>
 							</div>
@@ -299,7 +364,7 @@ class List extends React.Component {
 								})}
 							</div>
 
-							<Pager vis={this.state.pager} handler={this.updateChunkLength}/>
+							{/*<Pager vis={this.state.pager} handler={this.updateChunkLength}/>*/}
 						</div>
 					</div>
 				</div>

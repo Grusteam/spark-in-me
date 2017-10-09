@@ -156,7 +156,7 @@
 .slider {
 	position: fixed;
 	top: 50px;
-	right: 50px;
+	right: 100px;
 	z-index: 100;
 
 	&__container {
@@ -181,7 +181,7 @@
 		writing-mode: bt-lr;
 		width: 20px;
 		height: 100%;
-		
+		transform: rotate(180deg);
 	}
 }
 
