@@ -218,7 +218,7 @@ class List extends React.Component {
 			allArticles = articlesContainer.childNodes,
 			nearBoundry = 300,
 			screenSize = window.innerHeight,
-			nearToTop = sizes.top < 0 && -sizes.top < nearBoundry,
+			nearToTop = sizes.top < nearBoundry && -sizes.top < nearBoundry,
 			nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;
 
 		// console.log('sizes', sizes);
@@ -242,7 +242,7 @@ class List extends React.Component {
 			bottomArticle = allArticles[allArticles.length - 1];
 
 		// nearToTop && console.log('nearToTop');
-		nearToTop && this.upScroll(bulkPos);
+		nearToTop && !this.preventor && this.upScroll(bulkPos);
 		nearToEnd && this.downScroll();
 		// console.log('articleOnTop', articleOnTop);
 		// console.log('indexOnTopArticle', indexOnTopArticle);
@@ -254,6 +254,7 @@ class List extends React.Component {
 	}
 
 	upScroll(bulkPos) {
+		this.preventor = true;
 		const
 			{feedStartPosition, feedEndPosition} = this.state,
 			newFeedStartPosition = feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0;
@@ -269,7 +270,7 @@ class List extends React.Component {
 				const
 					{ articlesContainer } = this.refs,
 					allArticles = articlesContainer.childNodes,
-					target = _.find(allArticles, function(o) { return o.dataset.bulk == bulkPos; }),
+					target = _.find(allArticles, function(o) { return o.dataset.bulk == bulkPos + 1; }),
 					size = target.getBoundingClientRect();
 
 				console.log('target', target, size.top);
@@ -279,6 +280,10 @@ class List extends React.Component {
 				window.scrollTo(0, window.pageYOffset + size.top - size.height);
 			}, 0);
 		}
+
+		setTimeout(() => {
+			this.preventor = false;
+		}, 1000);
 	}
 
 	downScroll() {
