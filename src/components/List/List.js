@@ -52,7 +52,9 @@ class Announcement extends React.Component {
 
 		return (
 			<div className={s.post} data-position={position} data-bulk={item.posInBulk} data-id={item.article_id}>
-				<a href={item.main_picture} target="_blank"><span className={s.postImg}><img src={item.feed_picture} alt="" /></span></a>
+				<span className={s.postImg}>
+					<a href={item.main_picture} target="_blank"><img height="300" width="auto" src={item.feed_picture} alt="" /></a>
+				</span>
 				<Link to={'/post/' + item.slug}>
 					<h2 className={s.postTitle} >{1 + +item.posInBulk/*item.title*/}</h2>
 					<h3 className={s.postSubtitle}  >{item.subtitle}</h3>
@@ -199,7 +201,6 @@ class List extends React.Component {
 			feedEndPosition,
 		});
 
-		setTimeout(() => {
 			const
 				{ articlesContainer } = this.refs,
 				allArticles = articlesContainer.childNodes,
@@ -208,7 +209,6 @@ class List extends React.Component {
 
 
 			window.scrollTo(0, window.pageYOffset + size.top);
-		}, 0);
 	}
 
 	scrollAction(e) {
@@ -266,7 +266,6 @@ class List extends React.Component {
 				feedStartPosition: newFeedStartPosition,
 			});
 
-			setTimeout(() => {
 				const
 					{ articlesContainer } = this.refs,
 					allArticles = articlesContainer.childNodes,
@@ -278,7 +277,6 @@ class List extends React.Component {
 				console.log('window.offsetTop, size.top', window.pageYOffset, size.top);
 
 				window.scrollTo(0, window.pageYOffset + size.top - size.height);
-			}, 0);
 		}
 
 		setTimeout(() => {

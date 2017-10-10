@@ -1,6 +1,8 @@
-
-
 @import '../../components/variables.css';
+
+.root {
+	
+}
 
 .post {
 	border-bottom: 1px solid #eee;
@@ -42,6 +44,11 @@
 .postImg {
 	text-align: center;
 	display: block;
+
+	a {
+		display: inline-block;
+		
+	}
 }
 
 .postImg img {
