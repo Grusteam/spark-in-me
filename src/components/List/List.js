@@ -56,7 +56,7 @@ class Announcement extends React.Component {
 					<a href={item.main_picture} target="_blank"><img height="300" width="auto" src={item.feed_picture} alt="" /></a>
 				</span>
 				<Link to={'/post/' + item.slug}>
-					<h2 className={s.postTitle} >{1 + +item.posInBulk/*item.title*/}</h2>
+					<h2 className={s.postTitle} >{/*1 + +item.posInBulk*/item.title}</h2>
 					<h3 className={s.postSubtitle}  >{item.subtitle}</h3>
 				</Link>
 				<p className={s.postMeta} >Posted&nbsp;by&nbsp;
@@ -82,7 +82,7 @@ class List extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.sliderHeight = 200;
+		this.sliderHeight = 250;
 		this.articles = this.props.data.posts;
 		this.articlesCount = this.articles.length;
 
@@ -121,6 +121,18 @@ class List extends React.Component {
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.scrollAction);
+
+		window.addEventListener('mousedown', () => {
+			this.preventor = true;
+		});
+
+		window.addEventListener('mouseup', () => {
+			this.preventor = false;
+		});
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.scrollAction);
 	}
 
 	checkPager() {
@@ -170,7 +182,6 @@ class List extends React.Component {
 	}
 
 	createChunk() {
-		// chunk = this.articles.slice(this.state.chunkLength - 10, this.state.chunkLength);
 		const {feedStartPosition, feedEndPosition} = this.state;
 		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
 	}
@@ -184,14 +195,14 @@ class List extends React.Component {
 		this.setState({
 			pagerExpressValue: val,
 		});
-
 	}
 
 	handlePagerInputRelease(e) {
 		const
 			domEl = e.target,
 			val = +domEl.value,
-			feedStartPosition = val - 4 >= 0 ? val - 4 : 0,
+			weOnBegin = val < 4,
+			feedStartPosition = weOnBegin ? 0 : val - 4,
 			feedEndPosition = feedStartPosition + 9 <= this.articlesCount ? feedStartPosition + 9 : this.articlesCount;
 
 		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
@@ -201,66 +212,69 @@ class List extends React.Component {
 			feedEndPosition,
 		});
 
+		const
+			{ articlesContainer } = this.refs,
+			allArticles = articlesContainer.childNodes;
+
+		if (allArticles.length > 0) {
 			const
-				{ articlesContainer } = this.refs,
-				allArticles = articlesContainer.childNodes,
-				target = allArticles[4],
+				target = weOnBegin ? allArticles[val] : allArticles[4],
 				size = target.getBoundingClientRect();
-
-
+	
 			window.scrollTo(0, window.pageYOffset + size.top);
+		}
 	}
 
 	scrollAction(e) {
 		const
 			{ articlesContainer } = this.refs,
 			sizes = articlesContainer.getBoundingClientRect(),
-			allArticles = articlesContainer.childNodes,
-			oldShift = window.pageYOffset,
-			nearBoundry = 300,
-			screenSize = window.innerHeight,
-			nearToTop = sizes.top < nearBoundry && -sizes.top < nearBoundry,
-			nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;
+			allArticles = articlesContainer.childNodes;
 
-		// console.log('sizes', sizes);
+		if (allArticles.length > 0) {
+			const
+				oldShift = window.pageYOffset,
+				nearBoundry = 500,
+				screenSize = window.innerHeight,
+				nearToTop = sizes.top > -nearBoundry,
+				nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;
 
-		let indexOnTopArticle;
-		for (var i = 0; i < allArticles.length; i++) {
+			let indexOnTopArticle;
+
+			for (var i = 0; i < allArticles.length; i++) {
+
+				const
+					elSize = allArticles[i].getBoundingClientRect();
+
+				if (elSize.top + elSize.height > 0) {
+					indexOnTopArticle = i;
+					break;
+				}
+			}
 
 			const
-				elSize = allArticles[i].getBoundingClientRect();
+				articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,
+				bulkPos = +articleOnTop.dataset.bulk,
+				topArticle = allArticles[0],
+				bottomArticle = allArticles[allArticles.length - 1];
 
-			if (elSize.top + elSize.height > 0) {
-				indexOnTopArticle = i;
-				break;
-			}
+			nearToTop && !this.preventor && this.upScroll(sizes.height, oldShift);
+			nearToEnd && !this.preventor && this.downScroll();
+
+			this.setState({
+				pagerExpressValue: bulkPos
+			});
 		}
-
-		const
-			articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,
-			bulkPos = +articleOnTop.dataset.bulk,
-			topArticle = allArticles[0],
-			bottomArticle = allArticles[allArticles.length - 1];
-
-		// nearToTop && console.log('nearToTop');
-		nearToTop && !this.preventor && this.upScroll(sizes.height, oldShift);
-		nearToEnd && this.downScroll();
-		// console.log('articleOnTop', articleOnTop);
-		// console.log('indexOnTopArticle', indexOnTopArticle);
-		// console.log('bulkPos', bulkPos);
-
-		this.setState({
-			pagerExpressValue: bulkPos
-		});
 	}
 
 	upScroll(oldHeight, oldShift) {
-		this.preventor = true;
 		const
 			{feedStartPosition, feedEndPosition} = this.state,
 			newFeedStartPosition = feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0;
 
 		if (feedStartPosition > 0) {
+			this.preventor = true;
+
 			chunk = this.articles.slice(newFeedStartPosition, feedEndPosition);
 
 			this.setState({
@@ -273,11 +287,11 @@ class List extends React.Component {
 					
 				window.scrollTo(0, oldShift  + diff);
 			});
-		}
 
-		setTimeout(() => {
-			this.preventor = false;
-		}, 1000);
+			setTimeout(() => {
+				this.preventor = false;
+			}, 1000);
+		}
 	}
 
 	downScroll() {
@@ -294,8 +308,20 @@ class List extends React.Component {
 		});
 	}
 
-	render() {
+	getArticleDate(pos) {
+		const
+			months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+			{pagerExpressValue} = this.state,
+			str = this.articles[pos].published,
+			dateObj = new Date(str),
+			month = months[dateObj.getMonth()],
+			date = dateObj.getDate(),
+			answer = month + ' ' + date;
 
+		return answer;
+	}
+
+	render() {
 		if (this.state.chunkLength >= this.articlesCount) {
 				this.state.pager = false;
 		} else {
@@ -305,7 +331,7 @@ class List extends React.Component {
 		const
 			{ pagerExpressValue, chunkLength } = this.state,
 			tags = groupBy(this.props.data.tags || [], 'att_title'),
-			shiftValue = 10;
+			shiftValue = 40;
 
 		const
 			grouped_tags = Object.keys(tags).map((key) => {
@@ -327,6 +353,8 @@ class List extends React.Component {
 		this.formatDate();
 		this.checkTags();
 
+		// console.log('render');
+
 		return (
 			<div className={s.root}>
 				<div className="container">
@@ -344,16 +372,22 @@ class List extends React.Component {
 								<input
 									type="range"
 									min="0"
+									style={{width: this.sliderHeight}}
 									max={this.articlesCount - 1}
 									value={pagerExpressValue}
 									onChange={this.handlePagerInputChange}
 									onMouseUp={this.handlePagerInputRelease}
 								/>
-								<div className={s.slider__container}>
-									<div className={s.slider__value} style={{top: ((this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount)}}>
-										{(+pagerExpressValue + 1) + '/' + this.articlesCount}
+								
+								<div className={s.slider__container} style={{top: ((this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount)}}>
+									<div className={s.slider__info}>
+										<div className={s.slider__value} >{(+pagerExpressValue + 1) + ' / ' + this.articlesCount}</div>
+										<div className={s['slider__date-text']} >{this.getArticleDate(+pagerExpressValue)}</div>
 									</div>
 								</div>
+								
+								<div className={cx(s['slider__date'], s['slider__date--top'])}>{this.getArticleDate(0)}</div>
+								<div className={cx(s['slider__date'], s['slider__date--bottom'])}>{this.getArticleDate(this.articlesCount - 1)}</div>
 							</div>
 
 							<div ref="articlesContainer" className={s.articles}>
@@ -363,7 +397,6 @@ class List extends React.Component {
 								})}
 							</div>
 
-							{/*<Pager vis={this.state.pager} handler={this.updateChunkLength}/>*/}
 						</div>
 					</div>
 				</div>
