@@ -246,9 +246,13 @@ class List extends React.Component {
 				const
 					elSize = allArticles[i].getBoundingClientRect();
 
-				if (elSize.top + elSize.height > 0) {
+				if (elSize.top + elSize.height > 0 ) {
 					indexOnTopArticle = i;
 					break;
+				}
+
+				if (i == allArticles.length - 1) {
+					indexOnTopArticle = allArticles.length - 1;
 				}
 			}
 
@@ -256,14 +260,19 @@ class List extends React.Component {
 				articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,
 				bulkPos = +articleOnTop.dataset.bulk,
 				topArticle = allArticles[0],
-				bottomArticle = allArticles[allArticles.length - 1];
+				bottomArticle = allArticles[allArticles.length - 1],
+				{range} = this.refs;
 
 			nearToTop && !this.preventor && this.upScroll(sizes.height, oldShift);
 			nearToEnd && !this.preventor && this.downScroll();
 
-			this.setState({
-				pagerExpressValue: bulkPos
-			});
+			if (range.value != bulkPos) {
+				this.setState({
+					pagerExpressValue: bulkPos
+				})
+			}
+
+			range.value =  bulkPos;
 		}
 	}
 
@@ -277,16 +286,18 @@ class List extends React.Component {
 
 			chunk = this.articles.slice(newFeedStartPosition, feedEndPosition);
 
-			this.setState({
-				feedStartPosition: newFeedStartPosition,
-			}, () => {
-				const
-					{ articlesContainer } = this.refs,
-					sizes = articlesContainer.getBoundingClientRect(),
-					diff = sizes.height - oldHeight;
-					
-				window.scrollTo(0, oldShift  + diff);
-			});
+			if (feedStartPosition != newFeedStartPosition) {
+				this.setState({
+					feedStartPosition: newFeedStartPosition,
+				}, () => {
+					const
+						{ articlesContainer } = this.refs,
+						sizes = articlesContainer.getBoundingClientRect(),
+						diff = sizes.height - oldHeight;
+						
+					window.scrollTo(0, oldShift  + diff);
+				})
+			}
 
 			setTimeout(() => {
 				this.preventor = false;
@@ -303,9 +314,11 @@ class List extends React.Component {
 			chunk = this.articles.slice(feedStartPosition, newFeedEndPosition);
 		}
 
-		this.setState({
-			feedEndPosition: newFeedEndPosition,
-		});
+		if (feedEndPosition != newFeedEndPosition) {
+			this.setState({
+				feedEndPosition: newFeedEndPosition,
+			})
+		}
 	}
 
 	getArticleDate(pos) {
@@ -370,6 +383,7 @@ class List extends React.Component {
 
 							<div className={s.slider} style={{height: this.sliderHeight}}>
 								<input
+									ref="range"
 									type="range"
 									min="0"
 									style={{width: this.sliderHeight}}
