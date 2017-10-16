@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "2.2.1",
-  "hash": "00bffa3a748ee07989b9",
-  "time": 11505,
+  "hash": "69f19643c7f3618402b3",
+  "time": 11914,
   "publicPath": "/assets/",
   "assetsByChunkName": {
-    "client": "client.fda927a6.js",
-    "vendor": "vendor.5df5d679.js"
+    "client": "client.7719e791.js",
+    "vendor": "vendor.cd85cf57.js"
   },
   "assets": [
     {
-      "name": "client.fda927a6.js",
-      "size": 73453,
+      "name": "client.7719e791.js",
+      "size": 73550,
       "chunks": [
         0
       ],
@@ -22,7 +22,7 @@
       "emitted": true
     },
     {
-      "name": "vendor.5df5d679.js",
+      "name": "vendor.cd85cf57.js",
       "size": 384227,
       "chunks": [
         1
@@ -41,8 +41,8 @@
         0
       ],
       "assets": [
-        "vendor.5df5d679.js",
-        "client.fda927a6.js"
+        "vendor.cd85cf57.js",
+        "client.7719e791.js"
       ],
       "isOverSizeLimit": true
     }
@@ -54,14 +54,14 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 146047,
+      "size": 146094,
       "names": [
         "client"
       ],
       "files": [
-        "client.fda927a6.js"
+        "client.7719e791.js"
       ],
-      "hash": "fda927a67237169dd7ce",
+      "hash": "7719e791dbae6fc07160",
       "parents": [
         1
       ],
@@ -88,9 +88,9 @@
         "vendor"
       ],
       "files": [
-        "vendor.5df5d679.js"
+        "vendor.cd85cf57.js"
       ],
-      "hash": "5df5d67948ce97ef5d23",
+      "hash": "cd85cf574bf6b907668b",
       "parents": [],
       "origins": []
     }
@@ -5149,9 +5149,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.object.keys.js",
-      "issuerId": 456,
-      "issuerName": "./~/core-js/modules/es6.object.keys.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.object.get-prototype-of.js",
+      "issuerId": 451,
+      "issuerName": "./~/core-js/modules/es6.object.get-prototype-of.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6807,9 +6807,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/isomorphic-style-loader/lib/index.js!/home/serge/Projects/spark-in-me/node_modules/css-loader/index.js??ref--1-1!/home/serge/Projects/spark-in-me/node_modules/postcss-loader/index.js??ref--1-2!/home/serge/Projects/spark-in-me/src/components/List/List.css",
-      "issuerId": 599,
-      "issuerName": "./src/components/List/List.css",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/isomorphic-style-loader/lib/index.js!/home/serge/Projects/spark-in-me/node_modules/css-loader/index.js??ref--1-1!/home/serge/Projects/spark-in-me/node_modules/postcss-loader/index.js??ref--1-2!/home/serge/Projects/spark-in-me/src/components/Layout/Layout.css",
+      "issuerId": 597,
+      "issuerName": "./src/components/Layout/Layout.css",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7235,9 +7235,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.function.has-instance.js",
-      "issuerId": 413,
-      "issuerName": "./~/core-js/modules/es6.function.has-instance.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.object.get-prototype-of.js",
+      "issuerId": 451,
+      "issuerName": "./~/core-js/modules/es6.object.get-prototype-of.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7879,9 +7879,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactReconciler.js",
-      "issuerId": 83,
-      "issuerName": "./~/react-dom/lib/ReactReconciler.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactMount.js",
+      "issuerId": 252,
+      "issuerName": "./~/react-dom/lib/ReactMount.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -10414,7 +10414,7 @@
       "name": "./src/core/request/request.js",
       "index": 665,
       "index2": 659,
-      "size": 1007,
+      "size": 599,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -10501,7 +10501,7 @@
         "default"
       ],
       "depth": 4,
-      "source": "import fetch from '../fetch';\n\nvar respObj = {};\n\nexport default function request(name, params, alias) {\n\n\tvar request = {\n\t\t'key': 'aveysov_37db73bb0ce8f672618770b1956f8798',\n\t\t'method': {\n\t\t\t'name': name,\n\t\t\t'version': 1\n\t\t},\n\t\t'params': params ? params : []\n\t},\n\t    response = void 0;\n\n\tif (alias && !respObj[alias] || !respObj[name] || name == 'getSimilarArticlesByArticleAlias') {\n\t\tvar _response = fetch('https://api.spark-in.me/apiHandler.php', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t\"Content-Type\": \"application/x-www-form-urlencoded\"\n\t\t\t},\n\t\t\tbody: 'query=' + encodeURIComponent(JSON.stringify(request))\n\t\t}).then(function (respData) {\n\t\t\treturn respData.json();\n\t\t}).then(function (respBody) {\n\t\t\treturn respBody;\n\t\t});\n\n\t\tif (alias) {\n\t\t\tconsole.info('Request new data', alias);\n\t\t\trespObj[alias] = respObj[name] = _response;\n\t\t} else {\n\t\t\tconsole.info('Request new data', name);\n\t\t\trespObj[name] = _response;\n\t\t}\n\t}\n\n\tif (alias) {\n\t\treturn respObj[alias];\n\t} else {\n\t\treturn respObj[name];\n\t}\n}"
+      "source": "import fetch from '../fetch';\n\nexport default function request(name, params, alias) {\n\n\tvar request = {\n\t\t'key': 'aveysov_37db73bb0ce8f672618770b1956f8798',\n\t\t'method': {\n\t\t\t'name': name,\n\t\t\t'version': 1\n\t\t},\n\t\t'params': params ? params : []\n\t};\n\n\tvar response = fetch('https://api.spark-in.me/apiHandler.php', {\n\t\tmethod: 'POST',\n\t\theaders: {\n\t\t\t\"Content-Type\": \"application/x-www-form-urlencoded\"\n\t\t},\n\t\tbody: 'query=' + encodeURIComponent(JSON.stringify(request))\n\t}).then(function (respData) {\n\t\treturn respData.json();\n\t}).then(function (respBody) {\n\t\treturn respBody;\n\t});\n\n\treturn response;\n}"
     },
     {
       "id": 59,
@@ -11428,9 +11428,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.array.species.js",
-      "issuerId": 406,
-      "issuerName": "./~/core-js/modules/es6.array.species.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.regexp.constructor.js",
+      "issuerId": 478,
+      "issuerName": "./~/core-js/modules/es6.regexp.constructor.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13966,9 +13966,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/library/modules/_collection-strong.js",
-      "issuerId": 345,
-      "issuerName": "./~/core-js/library/modules/_collection-strong.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/library/modules/_string-at.js",
+      "issuerId": 362,
+      "issuerName": "./~/core-js/library/modules/_string-at.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14670,9 +14670,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es7.string.match-all.js",
-      "issuerId": 546,
-      "issuerName": "./~/core-js/modules/es7.string.match-all.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.regexp.constructor.js",
+      "issuerId": 478,
+      "issuerName": "./~/core-js/modules/es6.regexp.constructor.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14798,9 +14798,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.regexp.split.js",
-      "issuerId": 482,
-      "issuerName": "./~/core-js/modules/es6.regexp.split.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.regexp.constructor.js",
+      "issuerId": 478,
+      "issuerName": "./~/core-js/modules/es6.regexp.constructor.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -15374,9 +15374,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactDOMTextComponent.js",
-      "issuerId": 641,
-      "issuerName": "./~/react-dom/lib/ReactDOMTextComponent.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactDOMComponent.js",
+      "issuerId": 633,
+      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -15493,7 +15493,7 @@
       "name": "./src/components/List/List.js",
       "index": 682,
       "index2": 685,
-      "size": 15122,
+      "size": 15422,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -15544,7 +15544,7 @@
         "default"
       ],
       "depth": 4,
-      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { PropTypes } from 'react';\nimport cx from 'classnames';\nimport withStyles from 'isomorphic-style-loader/lib/withStyles';\nimport s from './List.css';\nimport Link from '../Link';\nimport Pager from '../Pager';\nimport { groupBy } from '../../core/groupBy';\nimport _ from 'lodash';\n\nfunction Tag(props) {\n\tvar item = props.item;\n\n\treturn _jsx('div', {\n\t\tclassName: s.tagsItem\n\t}, void 0, _jsx(Link, {\n\t\tto: '/tag/' + item.tag_alias,\n\t\tclassName: s.tagsLink\n\t}, void 0, item.tag_title), _jsx('span', {\n\t\tclassName: s.tagsCount\n\t}, void 0, item.article_count));\n}\n\nfunction TagPanel(props) {\n\tvar tags = props.tags;\n\tvar color = props.color;\n\tvar header = props.header;\n\n\ttags.sort(function (a, b) {\n\t\tif (a['article_count'] < b['article_count']) return 1;\n\t\tif (a['article_count'] > b['article_count']) return -1;\n\t\treturn 0;\n\t});\n\n\treturn _jsx('div', {\n\t\tclassName: s.bsCallout,\n\t\tstyle: { 'color': color, 'borderLeftColor': color }\n\t}, void 0, _jsx('h4', {}, void 0, header), _jsx('div', {\n\t\tclassName: 'tags'\n\t}, void 0, tags.map(function (item) {\n\t\treturn _jsx(Tag, {\n\t\t\titem: item\n\t\t}, item.tag_id);\n\t})));\n}\n\nvar _ref = _jsx('i', {\n\tclassName: 'fa fa-tag',\n\t'aria-hidden': 'true'\n});\n\nfunction Announcement(props) {\n\tvar item = props.item,\n\t    position = props.position;\n\n\n\treturn _jsx('div', {\n\t\tclassName: s.post,\n\t\t'data-position': position,\n\t\t'data-bulk': item.posInBulk,\n\t\t'data-id': item.article_id\n\t}, void 0, _jsx('span', {\n\t\tclassName: s.postImg\n\t}, void 0, _jsx('a', {\n\t\thref: item.main_picture,\n\t\ttarget: '_blank'\n\t}, void 0, _jsx('img', {\n\t\theight: '300',\n\t\twidth: 'auto',\n\t\tsrc: item.feed_picture,\n\t\talt: ''\n\t}))), _jsx(Link, {\n\t\tto: '/post/' + item.slug\n\t}, void 0, _jsx('h2', {\n\t\tclassName: s.postTitle\n\t}, void 0, /*1 + +item.posInBulk*/item.title), _jsx('h3', {\n\t\tclassName: s.postSubtitle\n\t}, void 0, item.subtitle)), _jsx('p', {\n\t\tclassName: s.postMeta\n\t}, void 0, 'Posted\\xA0by\\xA0', item.author_info ? item.author_info.map(function (author) {\n\t\treturn _jsx(Link, {\n\t\t\tto: '/author/' + author.author_alias\n\t\t}, author.author_id, author.author_alias, '\\xA0');\n\t}) : false, 'on ', item.published), _jsx('div', {\n\t\tclassName: s.postTags\n\t}, void 0, item.article_tags ? item.article_tags.map(function (tag) {\n\t\treturn _jsx(Link, {\n\t\t\tclassName: s.postTag,\n\t\t\tto: '/tag/' + tag.tag_alias\n\t\t}, tag.tag_id, _ref, tag.tag_title);\n\t}) : false));\n}\n\nvar chunk = [];\n\nvar List = function (_React$Component) {\n\t_inherits(List, _React$Component);\n\n\tfunction List(props) {\n\t\t_classCallCheck(this, List);\n\n\t\tvar _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));\n\n\t\t_this.sliderHeight = 250;\n\t\t_this.articles = _this.props.data.posts;\n\t\t_this.articlesCount = _this.articles.length;\n\n\t\t_.forEach(_this.articles, function (o, i) {\n\t\t\to.posInBulk = i;\n\t\t});\n\n\t\t_this.state = {\n\t\t\tchunkStep: 10,\n\t\t\tchunkLength: 10,\n\t\t\tpager: true,\n\t\t\tpagerExpressValue: 0,\n\t\t\tfeedStartPosition: 0,\n\t\t\tfeedEndPosition: 10\n\t\t};\n\n\t\t_this.updateChunkLength = _this.updateChunkLength.bind(_this);\n\t\t_this.handlePagerInputChange = _this.handlePagerInputChange.bind(_this);\n\t\t_this.handlePagerInputRelease = _this.handlePagerInputRelease.bind(_this);\n\t\t_this.scrollAction = _this.scrollAction.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(List, [{\n\t\tkey: 'componentWillMount',\n\t\tvalue: function componentWillMount() {\n\t\t\tthis.checkPager();\n\t\t\tthis.createChunk();\n\t\t}\n\t}, {\n\t\tkey: 'componentWillReceiveProps',\n\t\tvalue: function componentWillReceiveProps() {\n\t\t\tthis.setState({\n\t\t\t\tchunkStep: 10,\n\t\t\t\tchunkLength: 10\n\t\t\t});\n\n\t\t\tthis.checkPager();\n\t\t}\n\t}, {\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tvar _this2 = this;\n\n\t\t\twindow.addEventListener('scroll', this.scrollAction);\n\n\t\t\twindow.addEventListener('mousedown', function () {\n\t\t\t\t_this2.preventor = true;\n\t\t\t});\n\n\t\t\twindow.addEventListener('mouseup', function () {\n\t\t\t\t_this2.preventor = false;\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'componentWillUnmount',\n\t\tvalue: function componentWillUnmount() {\n\t\t\twindow.removeEventListener('scroll', this.scrollAction);\n\t\t}\n\t}, {\n\t\tkey: 'checkPager',\n\t\tvalue: function checkPager() {\n\t\t\tif (this.state.chunkLength >= this.articlesCount) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: false\n\t\t\t\t});\n\t\t\t} else {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: true\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'updateChunkLength',\n\t\tvalue: function updateChunkLength() {\n\t\t\tthis.setState({\n\t\t\t\tchunkLength: this.state.chunkLength + this.state.chunkStep\n\t\t\t});\n\n\t\t\tif (this.state.chunkLength + this.state.chunkStep >= this.articlesCount) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: false\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'formatDate',\n\t\tvalue: function formatDate() {\n\t\t\tvar monthNames = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\n\n\t\t\tthis.articles.map(function (item) {\n\t\t\t\tvar d = new Date(item.published ? item.published : item.publish_time);\n\t\t\t\titem.published = monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'checkTags',\n\t\tvalue: function checkTags() {\n\t\t\tif (this.props.data.tagsList && this.props.data.tags.length > 0) {\n\t\t\t\tthis.props.data.tagsList = true;\n\t\t\t} else {\n\t\t\t\tthis.props.data.tagsList = false;\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'createChunk',\n\t\tvalue: function createChunk() {\n\t\t\tvar _state = this.state,\n\t\t\t    feedStartPosition = _state.feedStartPosition,\n\t\t\t    feedEndPosition = _state.feedEndPosition;\n\n\t\t\tchunk = this.articles.slice(feedStartPosition, feedEndPosition);\n\t\t}\n\t}, {\n\t\tkey: 'handlePagerInputChange',\n\t\tvalue: function handlePagerInputChange(e) {\n\t\t\tvar domEl = e.target,\n\t\t\t    val = domEl.value,\n\t\t\t    bank = val % 10;\n\n\t\t\tthis.setState({\n\t\t\t\tpagerExpressValue: val\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'handlePagerInputRelease',\n\t\tvalue: function handlePagerInputRelease(e) {\n\t\t\tvar domEl = e.target,\n\t\t\t    val = +domEl.value,\n\t\t\t    weOnBegin = val < 4,\n\t\t\t    feedStartPosition = weOnBegin ? 0 : val - 4,\n\t\t\t    feedEndPosition = feedStartPosition + 9 <= this.articlesCount ? feedStartPosition + 9 : this.articlesCount;\n\n\t\t\tchunk = this.articles.slice(feedStartPosition, feedEndPosition);\n\n\t\t\tthis.setState({\n\t\t\t\tfeedStartPosition: feedStartPosition,\n\t\t\t\tfeedEndPosition: feedEndPosition\n\t\t\t});\n\n\t\t\tvar articlesContainer = this.refs.articlesContainer,\n\t\t\t    allArticles = articlesContainer.childNodes;\n\n\n\t\t\tif (allArticles.length > 0) {\n\t\t\t\tvar target = weOnBegin ? allArticles[val] : allArticles[4],\n\t\t\t\t    size = target.getBoundingClientRect();\n\n\t\t\t\twindow.scrollTo(0, window.pageYOffset + size.top);\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'scrollAction',\n\t\tvalue: function scrollAction(e) {\n\t\t\tvar articlesContainer = this.refs.articlesContainer,\n\t\t\t    sizes = articlesContainer.getBoundingClientRect(),\n\t\t\t    allArticles = articlesContainer.childNodes;\n\n\n\t\t\tif (allArticles.length > 0) {\n\t\t\t\tvar oldShift = window.pageYOffset,\n\t\t\t\t    nearBoundry = 500,\n\t\t\t\t    screenSize = window.innerHeight,\n\t\t\t\t    nearToTop = sizes.top > -nearBoundry,\n\t\t\t\t    nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;\n\n\t\t\t\tvar indexOnTopArticle = void 0;\n\n\t\t\t\tfor (var i = 0; i < allArticles.length; i++) {\n\n\t\t\t\t\tvar elSize = allArticles[i].getBoundingClientRect();\n\n\t\t\t\t\tif (elSize.top + elSize.height > 0) {\n\t\t\t\t\t\tindexOnTopArticle = i;\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (i == allArticles.length - 1) {\n\t\t\t\t\t\tindexOnTopArticle = allArticles.length - 1;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tvar articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,\n\t\t\t\t    bulkPos = +articleOnTop.dataset.bulk,\n\t\t\t\t    topArticle = allArticles[0],\n\t\t\t\t    bottomArticle = allArticles[allArticles.length - 1],\n\t\t\t\t    range = this.refs.range;\n\n\n\t\t\t\tnearToTop && !this.preventor && this.upScroll(sizes.height, oldShift);\n\t\t\t\tnearToEnd && !this.preventor && this.downScroll();\n\n\t\t\t\tif (range.value != bulkPos) {\n\t\t\t\t\tthis.setState({\n\t\t\t\t\t\tpagerExpressValue: bulkPos\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\trange.value = bulkPos;\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'upScroll',\n\t\tvalue: function upScroll(oldHeight, oldShift) {\n\t\t\tvar _this3 = this;\n\n\t\t\tvar _state2 = this.state,\n\t\t\t    feedStartPosition = _state2.feedStartPosition,\n\t\t\t    feedEndPosition = _state2.feedEndPosition,\n\t\t\t    newFeedStartPosition = feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0;\n\n\n\t\t\tif (feedStartPosition > 0) {\n\t\t\t\tthis.preventor = true;\n\n\t\t\t\tchunk = this.articles.slice(newFeedStartPosition, feedEndPosition);\n\n\t\t\t\tif (feedStartPosition != newFeedStartPosition) {\n\t\t\t\t\tthis.setState({\n\t\t\t\t\t\tfeedStartPosition: newFeedStartPosition\n\t\t\t\t\t}, function () {\n\t\t\t\t\t\tvar articlesContainer = _this3.refs.articlesContainer,\n\t\t\t\t\t\t    sizes = articlesContainer.getBoundingClientRect(),\n\t\t\t\t\t\t    diff = sizes.height - oldHeight;\n\n\n\t\t\t\t\t\twindow.scrollTo(0, oldShift + diff);\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\t_this3.preventor = false;\n\t\t\t\t}, 1000);\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'downScroll',\n\t\tvalue: function downScroll() {\n\t\t\tvar _state3 = this.state,\n\t\t\t    feedStartPosition = _state3.feedStartPosition,\n\t\t\t    feedEndPosition = _state3.feedEndPosition,\n\t\t\t    newFeedEndPosition = feedEndPosition + 10 < this.articlesCount ? feedEndPosition + 10 : this.articlesCount;\n\n\n\t\t\tif (feedEndPosition < this.articlesCount) {\n\t\t\t\tchunk = this.articles.slice(feedStartPosition, newFeedEndPosition);\n\t\t\t}\n\n\t\t\tif (feedEndPosition != newFeedEndPosition) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tfeedEndPosition: newFeedEndPosition\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'getArticleDate',\n\t\tvalue: function getArticleDate(pos) {\n\t\t\tvar months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],\n\t\t\t    pagerExpressValue = this.state.pagerExpressValue,\n\t\t\t    str = this.articles[pos].published,\n\t\t\t    dateObj = new Date(str),\n\t\t\t    month = months[dateObj.getMonth()],\n\t\t\t    date = dateObj.getDate(),\n\t\t\t    answer = month + ' ' + date;\n\n\n\t\t\treturn answer;\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\tif (this.state.chunkLength >= this.articlesCount) {\n\t\t\t\tthis.state.pager = false;\n\t\t\t} else {\n\t\t\t\tthis.state.pager = true;\n\t\t\t}\n\n\t\t\tvar _state4 = this.state,\n\t\t\t    pagerExpressValue = _state4.pagerExpressValue,\n\t\t\t    chunkLength = _state4.chunkLength,\n\t\t\t    tags = groupBy(this.props.data.tags || [], 'att_title'),\n\t\t\t    shiftValue = 40;\n\n\n\t\t\tvar grouped_tags = Object.keys(tags).map(function (key) {\n\t\t\t\treturn {\n\t\t\t\t\ttitle: key,\n\t\t\t\t\ttags: tags[key],\n\t\t\t\t\tkey: Math.random(),\n\t\t\t\t\tcolor: tags[key][0]['att_colour'] || '#777'\n\t\t\t\t};\n\t\t\t}).sort(function (a, b) {\n\t\t\t\tif (!a['tags'] && !b['tags']) return 0;\n\t\t\t\tif (!a['tags'] || a['tags'].length === 0) return 1;\n\t\t\t\tif (!b['tags'] || b['tags'].length === 0) return -1;\n\t\t\t\tif (a['tags'][0]['att_sort_order'] < b['tags'][0]['att_sort_order']) return 1;\n\t\t\t\tif (a['tags'][0]['att_sort_order'] > b['tags'][0]['att_sort_order']) return -1;\n\t\t\t\treturn 0;\n\t\t\t});\n\n\t\t\tthis.formatDate();\n\t\t\tthis.checkTags();\n\n\t\t\t// console.log('render');\n\n\t\t\treturn _jsx('div', {\n\t\t\t\tclassName: s.root\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'container'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'row'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.tags\n\t\t\t}, void 0, grouped_tags.map(function (gg) {\n\t\t\t\treturn _jsx(TagPanel, {\n\t\t\t\t\tcolor: gg.color,\n\t\t\t\t\theader: gg.title,\n\t\t\t\t\ttags: gg.tags\n\t\t\t\t}, gg.key);\n\t\t\t})), _jsx('div', {\n\t\t\t\tclassName: s.slider,\n\t\t\t\tstyle: { height: this.sliderHeight }\n\t\t\t}, void 0, React.createElement('input', {\n\t\t\t\tref: 'range',\n\t\t\t\ttype: 'range',\n\t\t\t\tmin: '0',\n\t\t\t\tstyle: { width: this.sliderHeight },\n\t\t\t\tmax: this.articlesCount - 1,\n\t\t\t\tvalue: pagerExpressValue,\n\t\t\t\tonChange: this.handlePagerInputChange,\n\t\t\t\tonMouseUp: this.handlePagerInputRelease\n\t\t\t}), _jsx('div', {\n\t\t\t\tclassName: s.slider__container,\n\t\t\t\tstyle: { top: (this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount }\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.slider__info\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.slider__value\n\t\t\t}, void 0, +pagerExpressValue + 1 + ' / ' + this.articlesCount), _jsx('div', {\n\t\t\t\tclassName: s['slider__date-text']\n\t\t\t}, void 0, this.getArticleDate(+pagerExpressValue)))), _jsx('div', {\n\t\t\t\tclassName: cx(s['slider__date'], s['slider__date--top'])\n\t\t\t}, void 0, this.getArticleDate(0)), _jsx('div', {\n\t\t\t\tclassName: cx(s['slider__date'], s['slider__date--bottom'])\n\t\t\t}, void 0, this.getArticleDate(this.articlesCount - 1))), React.createElement(\n\t\t\t\t'div',\n\t\t\t\t{ ref: 'articlesContainer', className: s.articles },\n\t\t\t\tchunk.map(function (item, i) {\n\t\t\t\t\tif (item.article_id) return _jsx(Announcement, {\n\t\t\t\t\t\tposition: i,\n\t\t\t\t\t\titem: item\n\t\t\t\t\t}, i);\n\t\t\t\t})\n\t\t\t)))));\n\t\t}\n\t}]);\n\n\treturn List;\n}(React.Component);\n\nexport default withStyles(s)(List);"
+      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { PropTypes } from 'react';\nimport cx from 'classnames';\nimport withStyles from 'isomorphic-style-loader/lib/withStyles';\nimport s from './List.css';\nimport Link from '../Link';\nimport Pager from '../Pager';\nimport { groupBy } from '../../core/groupBy';\nimport _ from 'lodash';\n\nfunction Tag(props) {\n\tvar item = props.item;\n\n\treturn _jsx('div', {\n\t\tclassName: s.tagsItem\n\t}, void 0, _jsx(Link, {\n\t\tto: '/tag/' + item.tag_alias,\n\t\tclassName: s.tagsLink\n\t}, void 0, item.tag_title), _jsx('span', {\n\t\tclassName: s.tagsCount\n\t}, void 0, item.article_count));\n}\n\nfunction TagPanel(props) {\n\tvar tags = props.tags;\n\tvar color = props.color;\n\tvar header = props.header;\n\n\ttags.sort(function (a, b) {\n\t\tif (a['article_count'] < b['article_count']) return 1;\n\t\tif (a['article_count'] > b['article_count']) return -1;\n\t\treturn 0;\n\t});\n\n\treturn _jsx('div', {\n\t\tclassName: s.bsCallout,\n\t\tstyle: { 'color': color, 'borderLeftColor': color }\n\t}, void 0, _jsx('h4', {}, void 0, header), _jsx('div', {\n\t\tclassName: 'tags'\n\t}, void 0, tags.map(function (item) {\n\t\treturn _jsx(Tag, {\n\t\t\titem: item\n\t\t}, item.tag_id);\n\t})));\n}\n\nvar _ref = _jsx('i', {\n\tclassName: 'fa fa-tag',\n\t'aria-hidden': 'true'\n});\n\nfunction Announcement(props) {\n\tvar item = props.item,\n\t    position = props.position;\n\n\n\treturn _jsx('div', {\n\t\tclassName: s.post,\n\t\t'data-position': position,\n\t\t'data-bulk': item.posInBulk,\n\t\t'data-id': item.article_id\n\t}, void 0, _jsx('span', {\n\t\tclassName: s.postImg\n\t}, void 0, _jsx('a', {\n\t\thref: item.main_picture,\n\t\ttarget: '_blank'\n\t}, void 0, _jsx('img', {\n\t\theight: '300',\n\t\twidth: 'auto',\n\t\tsrc: item.feed_picture,\n\t\talt: ''\n\t}))), _jsx(Link, {\n\t\tto: '/post/' + item.slug\n\t}, void 0, _jsx('h2', {\n\t\tclassName: s.postTitle\n\t}, void 0, /*1 + +item.posInBulk*/item.title), _jsx('h3', {\n\t\tclassName: s.postSubtitle\n\t}, void 0, item.subtitle)), _jsx('p', {\n\t\tclassName: s.postMeta\n\t}, void 0, 'Posted\\xA0by\\xA0', item.author_info ? item.author_info.map(function (author) {\n\t\treturn _jsx(Link, {\n\t\t\tto: '/author/' + author.author_alias\n\t\t}, author.author_id, author.author_alias, '\\xA0');\n\t}) : false, 'on ', item.published), _jsx('div', {\n\t\tclassName: s.postTags\n\t}, void 0, item.article_tags ? item.article_tags.map(function (tag) {\n\t\treturn _jsx(Link, {\n\t\t\tclassName: s.postTag,\n\t\t\tto: '/tag/' + tag.tag_alias\n\t\t}, tag.tag_id, _ref, tag.tag_title);\n\t}) : false));\n}\n\nvar chunk = [];\n\nvar List = function (_React$Component) {\n\t_inherits(List, _React$Component);\n\n\tfunction List(props) {\n\t\t_classCallCheck(this, List);\n\n\t\t// console.log('this.props.data.posts', this.props.data.posts);\n\n\t\tvar _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));\n\n\t\t_this.sliderHeight = 250;\n\t\t_this.articles = _this.props.data.posts;\n\t\t_this.articlesCount = _this.articles.length;\n\n\t\t_.forEach(_this.articles, function (o, i) {\n\t\t\to.posInBulk = i;\n\t\t});\n\n\t\t_this.state = {\n\t\t\tchunkStep: 10,\n\t\t\tchunkLength: 10,\n\t\t\tpager: true,\n\t\t\tpagerExpressValue: 0,\n\t\t\tfeedStartPosition: 0,\n\t\t\tfeedEndPosition: 10\n\t\t};\n\n\t\t_this.updateChunkLength = _this.updateChunkLength.bind(_this);\n\t\t_this.handlePagerInputChange = _this.handlePagerInputChange.bind(_this);\n\t\t_this.handlePagerInputRelease = _this.handlePagerInputRelease.bind(_this);\n\t\t_this.scrollAction = _this.scrollAction.bind(_this);\n\t\t_this.upScroll = _this.upScroll.bind(_this);\n\t\t_this.downScroll = _this.downScroll.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(List, [{\n\t\tkey: 'componentWillMount',\n\t\tvalue: function componentWillMount() {\n\t\t\tthis.checkPager();\n\t\t\tthis.createChunk();\n\t\t}\n\t}, {\n\t\tkey: 'componentWillReceiveProps',\n\t\tvalue: function componentWillReceiveProps() {\n\t\t\tthis.setState({\n\t\t\t\tchunkStep: 10,\n\t\t\t\tchunkLength: 10\n\t\t\t});\n\n\t\t\tthis.checkPager();\n\t\t}\n\t}, {\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tvar _this2 = this;\n\n\t\t\twindow.addEventListener('scroll', this.scrollAction);\n\n\t\t\twindow.addEventListener('mousedown', function () {\n\t\t\t\t_this2.preventor = true;\n\t\t\t});\n\n\t\t\twindow.addEventListener('mouseup', function () {\n\t\t\t\t_this2.preventor = false;\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'componentWillUnmount',\n\t\tvalue: function componentWillUnmount() {\n\t\t\twindow.removeEventListener('scroll', this.scrollAction);\n\t\t}\n\t}, {\n\t\tkey: 'checkPager',\n\t\tvalue: function checkPager() {\n\t\t\tif (this.state.chunkLength >= this.articlesCount) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: false\n\t\t\t\t});\n\t\t\t} else {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: true\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'updateChunkLength',\n\t\tvalue: function updateChunkLength() {\n\t\t\tthis.setState({\n\t\t\t\tchunkLength: this.state.chunkLength + this.state.chunkStep\n\t\t\t});\n\n\t\t\tif (this.state.chunkLength + this.state.chunkStep >= this.articlesCount) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tpager: false\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'formatDate',\n\t\tvalue: function formatDate() {\n\t\t\tvar monthNames = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\n\n\t\t\tthis.articles.map(function (item) {\n\t\t\t\tvar d = new Date(item.published ? item.published : item.publish_time);\n\t\t\t\titem.published = monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'checkTags',\n\t\tvalue: function checkTags() {\n\t\t\tif (this.props.data.tagsList && this.props.data.tags.length > 0) {\n\t\t\t\tthis.props.data.tagsList = true;\n\t\t\t} else {\n\t\t\t\tthis.props.data.tagsList = false;\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'createChunk',\n\t\tvalue: function createChunk() {\n\t\t\tvar _state = this.state,\n\t\t\t    feedStartPosition = _state.feedStartPosition,\n\t\t\t    feedEndPosition = _state.feedEndPosition;\n\n\t\t\tchunk = this.articles.slice(feedStartPosition, feedEndPosition);\n\t\t}\n\t}, {\n\t\tkey: 'handlePagerInputChange',\n\t\tvalue: function handlePagerInputChange(e) {\n\t\t\tvar domEl = e.target,\n\t\t\t    val = domEl.value,\n\t\t\t    bank = val % 10;\n\n\t\t\tthis.setState({\n\t\t\t\tpagerExpressValue: val\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'handlePagerInputRelease',\n\t\tvalue: function handlePagerInputRelease(e) {\n\t\t\tvar domEl = e.target,\n\t\t\t    val = +domEl.value,\n\t\t\t    weOnBegin = val < 4,\n\t\t\t    feedStartPosition = weOnBegin ? 0 : val - 4,\n\t\t\t    feedEndPosition = feedStartPosition + 9 <= this.articlesCount ? feedStartPosition + 9 : this.articlesCount;\n\n\t\t\tchunk = this.articles.slice(feedStartPosition, feedEndPosition);\n\n\t\t\tthis.setState({\n\t\t\t\tfeedStartPosition: feedStartPosition,\n\t\t\t\tfeedEndPosition: feedEndPosition\n\t\t\t});\n\n\t\t\tvar articlesContainer = this.refs.articlesContainer,\n\t\t\t    allArticles = articlesContainer.childNodes;\n\n\n\t\t\tif (allArticles.length > 0) {\n\t\t\t\tvar target = weOnBegin ? allArticles[val] : allArticles[4],\n\t\t\t\t    size = target.getBoundingClientRect();\n\n\t\t\t\twindow.scrollTo(0, window.pageYOffset + size.top);\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'scrollAction',\n\t\tvalue: function scrollAction(e) {\n\t\t\tvar articlesContainer = this.refs.articlesContainer,\n\t\t\t    sizes = articlesContainer.getBoundingClientRect(),\n\t\t\t    allArticles = articlesContainer.childNodes;\n\n\n\t\t\tif (allArticles.length > 0) {\n\t\t\t\tvar oldShift = window.pageYOffset,\n\t\t\t\t    nearBoundry = 500,\n\t\t\t\t    screenSize = window.innerHeight,\n\t\t\t\t    nearToTop = sizes.top > -nearBoundry,\n\t\t\t\t    nearToEnd = sizes.top < 0 && -sizes.top > sizes.height - screenSize - nearBoundry;\n\n\t\t\t\tvar indexOnTopArticle = void 0;\n\n\t\t\t\tfor (var i = 0; i < allArticles.length; i++) {\n\n\t\t\t\t\tvar elSize = allArticles[i].getBoundingClientRect();\n\n\t\t\t\t\tif (elSize.top + elSize.height > 0) {\n\t\t\t\t\t\tindexOnTopArticle = i;\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (i == allArticles.length - 1) {\n\t\t\t\t\t\tindexOnTopArticle = allArticles.length - 1;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tvar articleOnTop = allArticles[indexOnTopArticle] || bottomArticle,\n\t\t\t\t    bulkPos = +articleOnTop.dataset.bulk,\n\t\t\t\t    topArticle = allArticles[0],\n\t\t\t\t    bottomArticle = allArticles[allArticles.length - 1],\n\t\t\t\t    range = this.refs.range;\n\n\n\t\t\t\tnearToTop && !this.preventor && this.upScroll(sizes.height, oldShift);\n\t\t\t\tnearToEnd && !this.preventor && this.downScroll();\n\n\t\t\t\tif (range.value != bulkPos) {\n\t\t\t\t\tthis.setState({\n\t\t\t\t\t\tpagerExpressValue: bulkPos\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\trange.value = bulkPos;\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'upScroll',\n\t\tvalue: function upScroll(oldHeight, oldShift) {\n\t\t\tvar _this3 = this;\n\n\t\t\tvar _state2 = this.state,\n\t\t\t    feedStartPosition = _state2.feedStartPosition,\n\t\t\t    feedEndPosition = _state2.feedEndPosition,\n\t\t\t    newFeedStartPosition = feedStartPosition - 10 >= 0 ? feedStartPosition - 10 : 0;\n\n\n\t\t\tif (feedStartPosition > 0) {\n\t\t\t\tthis.preventor = true;\n\n\t\t\t\tchunk = this.articles.slice(newFeedStartPosition, feedEndPosition);\n\n\t\t\t\tif (feedStartPosition != newFeedStartPosition) {\n\t\t\t\t\tthis.setState({\n\t\t\t\t\t\tfeedStartPosition: newFeedStartPosition\n\t\t\t\t\t}, function () {\n\t\t\t\t\t\tvar articlesContainer = _this3.refs.articlesContainer,\n\t\t\t\t\t\t    sizes = articlesContainer.getBoundingClientRect(),\n\t\t\t\t\t\t    diff = sizes.height - oldHeight;\n\n\n\t\t\t\t\t\twindow.scrollTo(0, oldShift + diff);\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\t_this3.preventor = false;\n\t\t\t\t}, 1000);\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'downScroll',\n\t\tvalue: function downScroll() {\n\t\t\tvar _state3 = this.state,\n\t\t\t    feedStartPosition = _state3.feedStartPosition,\n\t\t\t    feedEndPosition = _state3.feedEndPosition,\n\t\t\t    newFeedEndPosition = feedEndPosition + 10 < this.articlesCount ? feedEndPosition + 10 : this.articlesCount;\n\n\n\t\t\tif (feedEndPosition < this.articlesCount) {\n\t\t\t\tchunk = this.articles.slice(feedStartPosition, newFeedEndPosition);\n\t\t\t}\n\n\t\t\tif (feedEndPosition != newFeedEndPosition) {\n\t\t\t\tthis.setState({\n\t\t\t\t\tfeedEndPosition: newFeedEndPosition\n\t\t\t\t});\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'getArticleDate',\n\t\tvalue: function getArticleDate(pos) {\n\t\t\tvar months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],\n\t\t\t    pagerExpressValue = this.state.pagerExpressValue,\n\t\t\t    str = this.articles[pos].published,\n\t\t\t    dateObj = new Date(str),\n\t\t\t    month = months[dateObj.getMonth()],\n\t\t\t    date = dateObj.getDate(),\n\t\t\t    answer = month + ' ' + date;\n\n\n\t\t\treturn answer;\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\tvar _state4 = this.state,\n\t\t\t    feedStartPosition = _state4.feedStartPosition,\n\t\t\t    feedEndPosition = _state4.feedEndPosition;\n\n\n\t\t\tif (this.state.chunkLength >= this.articlesCount) {\n\t\t\t\tthis.state.pager = false;\n\t\t\t} else {\n\t\t\t\tthis.state.pager = true;\n\t\t\t}\n\n\t\t\tvar _state5 = this.state,\n\t\t\t    pagerExpressValue = _state5.pagerExpressValue,\n\t\t\t    chunkLength = _state5.chunkLength,\n\t\t\t    tags = groupBy(this.props.data.tags || [], 'att_title'),\n\t\t\t    shiftValue = 40;\n\n\n\t\t\tvar grouped_tags = Object.keys(tags).map(function (key) {\n\t\t\t\treturn {\n\t\t\t\t\ttitle: key,\n\t\t\t\t\ttags: tags[key],\n\t\t\t\t\tkey: Math.random(),\n\t\t\t\t\tcolor: tags[key][0]['att_colour'] || '#777'\n\t\t\t\t};\n\t\t\t}).sort(function (a, b) {\n\t\t\t\tif (!a['tags'] && !b['tags']) return 0;\n\t\t\t\tif (!a['tags'] || a['tags'].length === 0) return 1;\n\t\t\t\tif (!b['tags'] || b['tags'].length === 0) return -1;\n\t\t\t\tif (a['tags'][0]['att_sort_order'] < b['tags'][0]['att_sort_order']) return 1;\n\t\t\t\tif (a['tags'][0]['att_sort_order'] > b['tags'][0]['att_sort_order']) return -1;\n\t\t\t\treturn 0;\n\t\t\t});\n\n\t\t\tthis.formatDate();\n\t\t\tthis.checkTags();\n\n\t\t\t// console.log('render');\n\n\t\t\treturn _jsx('div', {\n\t\t\t\tclassName: s.root\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'container'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'row'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.tags\n\t\t\t}, void 0, grouped_tags.map(function (gg) {\n\t\t\t\treturn _jsx(TagPanel, {\n\t\t\t\t\tcolor: gg.color,\n\t\t\t\t\theader: gg.title,\n\t\t\t\t\ttags: gg.tags\n\t\t\t\t}, gg.key);\n\t\t\t})), _jsx('div', {\n\t\t\t\tclassName: s.slider,\n\t\t\t\tstyle: { height: this.sliderHeight }\n\t\t\t}, void 0, React.createElement('input', {\n\t\t\t\tref: 'range',\n\t\t\t\ttype: 'range',\n\t\t\t\tmin: '0',\n\t\t\t\tstyle: { width: this.sliderHeight },\n\t\t\t\tmax: this.articlesCount - 1,\n\t\t\t\tvalue: pagerExpressValue,\n\t\t\t\tonChange: this.handlePagerInputChange,\n\t\t\t\tonMouseUp: this.handlePagerInputRelease\n\t\t\t}), _jsx('div', {\n\t\t\t\tclassName: s.slider__container,\n\t\t\t\tstyle: { top: (this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount }\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.slider__info\n\t\t\t}, void 0, _jsx('div', {\n\t\t\t\tclassName: s.slider__value\n\t\t\t}, void 0, +pagerExpressValue + 1 + ' / ' + this.articlesCount), _jsx('div', {\n\t\t\t\tclassName: s['slider__date-text']\n\t\t\t}, void 0, this.getArticleDate(+pagerExpressValue)))), _jsx('div', {\n\t\t\t\tclassName: cx(s['slider__date'], s['slider__date--top'])\n\t\t\t}, void 0, this.getArticleDate(0)), _jsx('div', {\n\t\t\t\tclassName: cx(s['slider__date'], s['slider__date--bottom'])\n\t\t\t}, void 0, this.getArticleDate(this.articlesCount - 1))), React.createElement(\n\t\t\t\t'div',\n\t\t\t\t{ ref: 'articlesContainer', className: s.articles },\n\t\t\t\tchunk.map(function (item, i) {\n\t\t\t\t\tif (item.article_id) return _jsx(Announcement, {\n\t\t\t\t\t\tposition: i,\n\t\t\t\t\t\titem: item\n\t\t\t\t\t}, i);\n\t\t\t\t})\n\t\t\t)))));\n\t\t}\n\t}]);\n\n\treturn List;\n}(React.Component);\n\nexport default withStyles(s)(List);"
     },
     {
       "id": 126,
@@ -19091,9 +19091,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactDOMTextComponent.js",
-      "issuerId": 641,
-      "issuerName": "./~/react-dom/lib/ReactDOMTextComponent.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/react-dom/lib/ReactDOMComponent.js",
+      "issuerId": 633,
+      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -20371,9 +20371,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.weak-map.js",
-      "issuerId": 237,
-      "issuerName": "./~/core-js/modules/es6.weak-map.js",
+      "issuer": "/home/serge/Projects/spark-in-me/node_modules/core-js/modules/es6.weak-set.js",
+      "issuerId": 518,
+      "issuerName": "./~/core-js/modules/es6.weak-set.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -33863,7 +33863,7 @@
       "name": "./~/css-loader?{\"importLoaders\":1,\"sourceMap\":false,\"modules\":true,\"localIdentName\":\"[hash:base64:5]\",\"minimize\":true,\"discardComments\":{\"removeAll\":true}}!./~/postcss-loader?{\"config\":\"./tools/postcss.config.js\"}!./src/components/List/List.css",
       "index": 684,
       "index2": 678,
-      "size": 3624,
+      "size": 3737,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -33892,7 +33892,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 6,
-      "source": "exports = module.exports = require(\"./../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \"._1k017{border-bottom:1px solid #eee;margin-bottom:20px}._1k017 a{color:#333;display:block;cursor:pointer}._1k017 a:focus,._1k017 a:hover{text-decoration:none;color:#0085a1}._3uA6N{font-size:30px;margin-top:30px;margin-bottom:10px}.LG76t{margin:0;font-weight:300;margin-bottom:10px}._1M_5a{color:#777;font-size:18px;font-style:italic;margin-top:0;margin-bottom:0}._3cSOb{text-align:center;display:block}._3cSOb a{display:inline-block}._3cSOb img{max-width:100%;cursor:pointer}._1M_5a a{text-decoration:none;color:#333;display:inline-block}._1M_5a a:focus,._1M_5a a:hover{color:#0085a1;text-decoration:underline}._2L7Sw{margin-bottom:15px}._2L7Sw a{display:inline-block;margin:0 8px 0 0;color:#777;font-family:Lora,Times New Roman,serif;font-style:italic}._2y3MJ{font-size:14px}._2y3MJ i{margin:0 3px 1px 0;vertical-align:middle}._1oWK5{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-radius:3px}._1oWK5 h4{margin-top:0;margin-bottom:5px}._1oWK5 p:last-child{margin-bottom:0}._1oWK5 code{border-radius:3px}._1oWK5+._1oWK5{margin-top:-5px}.-TIsT{border-left-color:#777}.-TIsT h4{color:#777}._2t929{margin-bottom:70px;text-align:left}._2qMoO{display:inline-block;white-space:nowrap;padding:5px 10px;padding-left:0}._3prOn{font-family:Lora,Times New Roman,serif;color:#777;font-size:18px}._1cZPA,._3prOn{font-style:italic;display:inline-block}._1cZPA{color:#000;margin-left:4px;background-color:#ccc;border-radius:50%;height:20px;min-width:20px;vertical-align:middle;text-align:center;line-height:20px;font-size:12px;font-weight:700;padding:0 5px}.SyQkh{position:fixed;top:calc(50vh - 150px);right:30px;z-index:100;width:100px;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.SyQkh input[type=range]{position:absolute;z-index:2;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);-webkit-appearance:none;width:100%;margin:2.5px 0}.SyQkh input[type=range]:focus{outline:none}.SyQkh input[type=range]::-webkit-slider-runnable-track{width:100%;height:1px;cursor:pointer;background:#c2ebff}.SyQkh input[type=range]::-webkit-slider-thumb{height:90px;width:50px;background:#c2ebff;cursor:pointer;-webkit-appearance:none;margin-top:-90px;opacity:0}.SyQkh input[type=range]:focus::-webkit-slider-runnable-track{background:#c2ebff}._2QWkp{color:#999;position:absolute;font-size:14px}._7_Txc{top:-25px}._3T_sk{bottom:-28px}.dvM0S{position:absolute;left:-3px;top:0;height:50px;max-width:100px;padding-left:20px;border-left:5px solid #c2ebff}._1LoMe{padding-top:8px;position:relative;line-height:17px;font-size:14px}._2WpH2{font-weight:700}._93fqC{color:#999}._1Hk26{//:blue;//:1px}@media only screen and (min-width:767px){._3uA6N{font-size:36px}}@media screen and (max-width:767px){._3uA6N{font-size:24px}.LG76t{font-size:18px}}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"root\": \"_3hxYQ\",\n\t\"post\": \"_1k017\",\n\t\"postTitle\": \"_3uA6N\",\n\t\"postSubtitle\": \"LG76t\",\n\t\"postMeta\": \"_1M_5a\",\n\t\"postImg\": \"_3cSOb\",\n\t\"postTags\": \"_2L7Sw\",\n\t\"postTag\": \"_2y3MJ\",\n\t\"bsCallout\": \"_1oWK5\",\n\t\"bsCalloutDefault\": \"-TIsT\",\n\t\"tags\": \"_2t929\",\n\t\"tagsItem\": \"_2qMoO\",\n\t\"tagsLink\": \"_3prOn\",\n\t\"tagsCount\": \"_1cZPA\",\n\t\"slider\": \"SyQkh\",\n\t\"slider__date\": \"_2QWkp\",\n\t\"slider__date--top\": \"_7_Txc\",\n\t\"slider__date--bottom\": \"_3T_sk\",\n\t\"slider__container\": \"dvM0S\",\n\t\"slider__info\": \"_1LoMe\",\n\t\"slider__value\": \"_2WpH2\",\n\t\"slider__date-text\": \"_93fqC\",\n\t\"articles\": \"_1Hk26\"\n};"
+      "source": "exports = module.exports = require(\"./../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \"._1k017{border-bottom:1px solid #eee;margin-bottom:20px}._1k017 a{color:#333;display:block;cursor:pointer}._1k017 a:focus,._1k017 a:hover{text-decoration:none;color:#0085a1}._3uA6N{font-size:30px;margin-top:30px;margin-bottom:10px}.LG76t{margin:0;font-weight:300;margin-bottom:10px}._1M_5a{color:#777;font-size:18px;font-style:italic;margin-top:0;margin-bottom:0}._3cSOb{overflow:hidden;text-align:center;display:block}._3cSOb a{display:inline-block}._3cSOb img{cursor:pointer}._1M_5a a{text-decoration:none;color:#333;display:inline-block}._1M_5a a:focus,._1M_5a a:hover{color:#0085a1;text-decoration:underline}._2L7Sw{margin-bottom:15px}._2L7Sw a{display:inline-block;margin:0 8px 0 0;color:#777;font-family:Lora,Times New Roman,serif;font-style:italic}._2y3MJ{font-size:14px}._2y3MJ i{margin:0 3px 1px 0;vertical-align:middle}._1oWK5{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-radius:3px}._1oWK5 h4{margin-top:0;margin-bottom:5px}._1oWK5 p:last-child{margin-bottom:0}._1oWK5 code{border-radius:3px}._1oWK5+._1oWK5{margin-top:-5px}.-TIsT{border-left-color:#777}.-TIsT h4{color:#777}._2t929{margin-bottom:70px;text-align:left}._2qMoO{display:inline-block;white-space:nowrap;padding:5px 10px;padding-left:0}._3prOn{font-family:Lora,Times New Roman,serif;color:#777;font-size:18px}._1cZPA,._3prOn{font-style:italic;display:inline-block}._1cZPA{color:#000;margin-left:4px;background-color:#ccc;border-radius:50%;height:20px;min-width:20px;vertical-align:middle;text-align:center;line-height:20px;font-size:12px;font-weight:700;padding:0 5px}.SyQkh{position:fixed;top:calc(50vh - 150px);right:30px;z-index:100;width:100px;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.SyQkh input[type=range]{position:absolute;z-index:2;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);-webkit-appearance:none;width:100%;margin:2.5px 0}.SyQkh input[type=range]:focus{outline:none}.SyQkh input[type=range]::-webkit-slider-runnable-track{width:100%;height:1px;cursor:pointer;background:#c2ebff}.SyQkh input[type=range]::-webkit-slider-thumb{height:90px;width:50px;background:#c2ebff;cursor:pointer;-webkit-appearance:none;margin-top:-90px;opacity:0}.SyQkh input[type=range]:focus::-webkit-slider-runnable-track{background:#c2ebff}._2QWkp{color:#999;position:absolute;font-size:14px}._7_Txc{top:-25px}._3T_sk{bottom:-28px}.dvM0S{position:absolute;left:-3px;top:0;height:50px;max-width:100px;padding-left:20px;border-left:5px solid #c2ebff}._1LoMe{padding-top:8px;position:relative;line-height:17px;font-size:14px}._2WpH2{font-weight:700}._93fqC{color:#999}._1Hk26{//:blue;//:1px}@media screen and (max-width:1024px){._3cSOb{width:100%}._3cSOb img{width:100%;height:auto}}@media only screen and (min-width:767px){._3uA6N{font-size:36px}}@media screen and (max-width:767px){.SyQkh{display:none}._3uA6N{font-size:24px}.LG76t{font-size:18px}}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"root\": \"_3hxYQ\",\n\t\"post\": \"_1k017\",\n\t\"postTitle\": \"_3uA6N\",\n\t\"postSubtitle\": \"LG76t\",\n\t\"postMeta\": \"_1M_5a\",\n\t\"postImg\": \"_3cSOb\",\n\t\"postTags\": \"_2L7Sw\",\n\t\"postTag\": \"_2y3MJ\",\n\t\"bsCallout\": \"_1oWK5\",\n\t\"bsCalloutDefault\": \"-TIsT\",\n\t\"tags\": \"_2t929\",\n\t\"tagsItem\": \"_2qMoO\",\n\t\"tagsLink\": \"_3prOn\",\n\t\"tagsCount\": \"_1cZPA\",\n\t\"slider\": \"SyQkh\",\n\t\"slider__date\": \"_2QWkp\",\n\t\"slider__date--top\": \"_7_Txc\",\n\t\"slider__date--bottom\": \"_3T_sk\",\n\t\"slider__container\": \"dvM0S\",\n\t\"slider__info\": \"_1LoMe\",\n\t\"slider__value\": \"_2WpH2\",\n\t\"slider__date-text\": \"_93fqC\",\n\t\"articles\": \"_1Hk26\"\n};"
     },
     {
       "id": 565,
@@ -33974,7 +33974,7 @@
       "name": "./~/css-loader?{\"importLoaders\":1,\"sourceMap\":false,\"modules\":true,\"localIdentName\":\"[hash:base64:5]\",\"minimize\":true,\"discardComments\":{\"removeAll\":true}}!./~/postcss-loader?{\"config\":\"./tools/postcss.config.js\"}!./src/components/Pager/Pager.css",
       "index": 687,
       "index2": 680,
-      "size": 502,
+      "size": 544,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -34003,7 +34003,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 7,
-      "source": "exports = module.exports = require(\"./../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".a2gVo ._1pEkS{float:right}._1pEkS{font-size:14px;padding:15px 25px;background-color:#fff;border-radius:0;border:1px solid #ddd;display:none}._3pU1d{display:block!important}._1pEkS:hover{color:#fff;background-color:#0085a1;border:1px solid #0085a1}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"pagerNext\": \"a2gVo\",\n\t\"pagerBtn\": \"_1pEkS\",\n\t\"pagerBtnVis\": \"_3pU1d\"\n};"
+      "source": "exports = module.exports = require(\"./../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".a2gVo ._1pEkS{float:right}._1pEkS{font-size:14px;padding:15px 25px;background-color:#fff;border-radius:0;border:1px solid #ddd;display:none}._1pEkS:hover{color:#fff;background-color:#0085a1;border:1px solid #0085a1}@media only screen and (max-width:767px){._3pU1d{display:block!important}}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"pagerNext\": \"a2gVo\",\n\t\"pagerBtn\": \"_1pEkS\",\n\t\"pagerBtnVis\": \"_3pU1d\"\n};"
     },
     {
       "id": 568,

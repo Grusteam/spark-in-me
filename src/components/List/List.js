@@ -333,7 +333,8 @@ class List extends React.Component {
 			dateObj = new Date(str),
 			month = months[dateObj.getMonth()],
 			date = dateObj.getDate(),
-			answer = month + ' ' + date;
+			year = (dateObj.getFullYear() + '').slice(2, 4),
+			answer = month + ' ' + date + ', ' + year;
 
 		return answer;
 	}

@@ -1,6 +1,8 @@
 import fetch from '../fetch';
 
 export default function request(name, params, alias) {
+
+	console.log('fetch request');
 	
 	let request = {
 		'key': 'aveysov_37db73bb0ce8f672618770b1956f8798',
