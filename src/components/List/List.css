@@ -42,6 +42,7 @@
 }
 
 .postImg {
+	overflow: hidden;
 	text-align: center;
 	display: block;
 
@@ -52,7 +53,6 @@
 }
 
 .postImg img {
-	max-width: 100%;
 	cursor: pointer;
 }
 
@@ -90,37 +90,37 @@
 }
 
 .bsCallout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
 }
 
 .bsCallout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
+	margin-top: 0;
+	margin-bottom: 5px;
 	/*font-weight: 500;*/
 }
 
 .bsCallout p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .bsCallout code {
-    border-radius: 3px;
+	border-radius: 3px;
 }
 
 .bsCallout+.bsCallout {
-    margin-top: -5px;
+	margin-top: -5px;
 }
 
 .bsCalloutDefault {
-    border-left-color: #777;
+	border-left-color: #777;
 }
 
 .bsCalloutDefault h4 {
-    color: #777;
+	color: #777;
 }
 
 .tags {
@@ -251,6 +251,17 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+	.postImg {
+		width: 100%;
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
 @media only screen and (min-width: 767px) {
 	.postTitle {
 		font-size: 36px;
@@ -258,6 +269,13 @@
 }
 
 @media screen and (max-width: 767px) {
+	/* mobile */
+
+	.slider {
+		display: none;
+		
+	}
+
 	.postTitle {
 		font-size: 24px;
 	}

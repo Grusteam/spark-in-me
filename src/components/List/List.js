@@ -46,10 +46,6 @@ class TagPanel extends React.Component {
 }
 
 class Announcement extends React.Component {
-	// shouldComponentUpdate (nextProps, nextState) {
-	// 	return false;
-	// }
-
 	render() {
 		const
 			{item, position} = this.props;
@@ -109,6 +105,8 @@ class List extends React.Component {
 		this.handlePagerInputChange = this.handlePagerInputChange.bind(this);
 		this.handlePagerInputRelease = this.handlePagerInputRelease.bind(this);
 		this.scrollAction = this.scrollAction.bind(this);
+		this.upScroll = this.upScroll.bind(this);
+		this.downScroll = this.downScroll.bind(this);
 	}
 
 	componentWillMount() {
@@ -341,6 +339,9 @@ class List extends React.Component {
 	}
 
 	render() {
+		const
+			{feedStartPosition, feedEndPosition} = this.state;
+
 		if (this.state.chunkLength >= this.articlesCount) {
 				this.state.pager = false;
 		} else {
@@ -416,6 +417,8 @@ class List extends React.Component {
 									return <Announcement position={i} item={item} key={i} />
 								})}
 							</div>
+
+							{/*<Pager vis={feedEndPosition < this.articlesCount} handler={this.downScroll}/>*/}
 
 						</div>
 					</div>
