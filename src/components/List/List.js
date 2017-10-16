@@ -46,6 +46,10 @@ class TagPanel extends React.Component {
 }
 
 class Announcement extends React.Component {
+	// shouldComponentUpdate (nextProps, nextState) {
+	// 	return false;
+	// }
+
 	render() {
 		const
 			{item, position} = this.props;
@@ -81,6 +85,8 @@ let chunk = [];
 class List extends React.Component {
 	constructor(props) {
 		super(props);
+
+		// console.log('this.props.data.posts', this.props.data.posts);
 
 		this.sliderHeight = 250;
 		this.articles = this.props.data.posts;

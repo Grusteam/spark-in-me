@@ -14,6 +14,11 @@ export default {
 			responsePosts = await request('getArticleFeed', {'getFullArticles': 1}),
 			responseTags = await request('getTagInfo', {'targetId': 2, 'tagId': 0, 'getFullArticles' : 0}),
 			responseAuthors = await request('getAuthorByAlias', {'authorAlias': 'all-authors', 'getFullArticles': 0});
+
+		// console.log(responseGlobal.response.data);
+		// console.log(responsePosts.response.data);
+		// console.log(responseTags.response.data);
+		// console.log(responseAuthors.response.data);
 		
 		if (!responseGlobal || !responsePosts || !responseTags || !responseAuthors) {
 			return { redirect: '/error' };

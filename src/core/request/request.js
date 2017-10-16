@@ -1,7 +1,5 @@
 import fetch from '../fetch';
 
-let respObj = {};
-
 export default function request(name, params, alias) {
 	
 	let request = {
@@ -11,33 +9,19 @@ export default function request(name, params, alias) {
 			'version':1
 		},
 		'params': params ? params : []
-	}, response;
+	};
 
-	if ((alias && !respObj[alias]) || !respObj[name] || name == 'getSimilarArticlesByArticleAlias') {
-		const response = fetch('https://api.spark-in.me/apiHandler.php', {
-				method: 'POST',
-				headers: {
-					"Content-Type": "application/x-www-form-urlencoded"
-				},
-				body: 'query=' + encodeURIComponent(JSON.stringify(request))
-		}).then(function(respData) {
-			return respData.json();
-		}).then(function(respBody) {
-			return respBody;
-		});
-		
-		if (alias) {
-			console.info('Request new data', alias);
-			respObj[alias] = respObj[name] = response;
-		} else {
-			console.info('Request new data', name);
-			respObj[name] = response;
-		}
-	}
+	const response = fetch('https://api.spark-in.me/apiHandler.php', {
+			method: 'POST',
+			headers: {
+				"Content-Type": "application/x-www-form-urlencoded"
+			},
+			body: 'query=' + encodeURIComponent(JSON.stringify(request))
+	}).then(function(respData) {
+		return respData.json();
+	}).then(function(respBody) {
+		return respBody;
+	});
 	
-	if (alias) {
-		return respObj[alias];
-	} else {
-		return respObj[name];
-	}
+	return response;
 }
