@@ -82,6 +82,8 @@ class List extends React.Component {
 	constructor(props) {
 		super(props);
 
+		// console.log('this.props.data.posts', this.props.data.posts);
+
 		this.sliderHeight = 250;
 		this.articles = this.props.data.posts;
 		this.articlesCount = this.articles.length;
@@ -103,6 +105,8 @@ class List extends React.Component {
 		this.handlePagerInputChange = this.handlePagerInputChange.bind(this);
 		this.handlePagerInputRelease = this.handlePagerInputRelease.bind(this);
 		this.scrollAction = this.scrollAction.bind(this);
+		this.upScroll = this.upScroll.bind(this);
+		this.downScroll = this.downScroll.bind(this);
 	}
 
 	componentWillMount() {
@@ -329,12 +333,16 @@ class List extends React.Component {
 			dateObj = new Date(str),
 			month = months[dateObj.getMonth()],
 			date = dateObj.getDate(),
-			answer = month + ' ' + date;
+			year = (dateObj.getFullYear() + '').slice(2, 4),
+			answer = month + ' ' + date + ', ' + year;
 
 		return answer;
 	}
 
 	render() {
+		const
+			{feedStartPosition, feedEndPosition} = this.state;
+
 		if (this.state.chunkLength >= this.articlesCount) {
 				this.state.pager = false;
 		} else {
@@ -410,6 +418,8 @@ class List extends React.Component {
 									return <Announcement position={i} item={item} key={i} />
 								})}
 							</div>
+
+							{/*<Pager vis={feedEndPosition < this.articlesCount} handler={this.downScroll}/>*/}
 
 						</div>
 					</div>

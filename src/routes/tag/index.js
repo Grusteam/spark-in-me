@@ -19,6 +19,8 @@ export default {
 			return { redirect: '/error' };
 		}
 
+		// console.log('tag responsePosts', responsePosts);
+
 		const
 			glogalData = responseGlobal.response.data,
 			tagData = responsePosts.response.data.tag_data[0];

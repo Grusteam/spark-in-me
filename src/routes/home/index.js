@@ -19,6 +19,8 @@ export default {
 			return { redirect: '/error' };
 		}
 
+		// console.log('home responsePosts', responsePosts);
+
 		const
 			glogalData = responseGlobal.response.data,
 			curPage = glogalData.globals.pages.home,
