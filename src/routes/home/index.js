@@ -8,7 +8,8 @@ export default {
 
 	path: '/',
 
-	async action() {
+	async action({dataCache}) {
+		console.log('dataCache', dataCache);
 		const 
 			responseGlobal = await request('getBlogObjects'),
 			responsePosts = await request('getArticleFeed', {'getFullArticles': 1}),
