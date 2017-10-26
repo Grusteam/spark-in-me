@@ -110,11 +110,16 @@ app.get('*', async (req, res, next) => {
 			store,
 		};
 
-		const route = await UniversalRouter.resolve(routes, {
-			...context,
-			path: req.path,
-			query: req.query,
-		});
+
+
+		const
+			dataCache = {test: 717},
+			route = await UniversalRouter.resolve(routes, {
+				...context,
+				path: req.path,
+				query: req.query,
+				dataCache // our store
+			});
 
 		if (route.redirect) {
 			res.redirect(route.status || 302, route.redirect);
@@ -135,6 +140,9 @@ app.get('*', async (req, res, next) => {
 		if (assets[route.chunk]) {
 			data.scripts.push(assets[route.chunk].js);
 		}
+		data.dataCache = dataCache;
+
+		// console.log('server dataCache', dataCache);
 
 		const html = ReactDOM.renderToStaticMarkup(<Html {...data} />);
 		res.status(route.status || 200);

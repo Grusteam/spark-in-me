@@ -113,7 +113,10 @@ async function onLocationChange(location, action) {
 			...context,
 			path: location.pathname,
 			query: queryString.parse(location.search),
+			dataCache: window.APP_CACHE
 		});
+
+		// console.log('client window.APP_CACHE', window.APP_CACHE);
 
 		// Prevent multiple page renders during the routing process
 		if (currentLocation.key !== location.key) {

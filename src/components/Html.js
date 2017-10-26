@@ -25,7 +25,9 @@ class Html extends React.Component {
 	};
 	
 	render() {
-		const { title, styles, scripts, meta = false, state, children} = this.props;
+		const { title, styles, scripts, meta = false, state, children, dataCache} = this.props;
+
+		// console.log('html dataCache', dataCache);
 		
 		return (
 			<html className="no-js" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" xmlLang="ru">
@@ -76,7 +78,6 @@ class Html extends React.Component {
 					<link rel="stylesheet" href="/styles/font-awesome.css" />
 					<link rel="stylesheet" href="/styles/fa-viber.css" />
 					<link rel="stylesheet" href="/styles/clean-blog.css" />
-					<link rel="stylesheet" href="/highlight.css" />
 					
 					{styles.map(style =>
 						<style
@@ -100,6 +101,10 @@ class Html extends React.Component {
 							`window.APP_STATE=${serialize(state, { isJSON: true })}` }}
 						/>
 					)}
+					<script
+						dangerouslySetInnerHTML={{ __html:
+						`window.APP_CACHE=${serialize(dataCache)}` }}
+					/>
 					{scripts.map(script => <script key={script} src={script} />)}
 					{analytics.google.trackingId &&
 						<script

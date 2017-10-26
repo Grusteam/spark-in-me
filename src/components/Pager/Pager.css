@@ -14,12 +14,16 @@
 	display: none;
 }
 
-.pagerBtnVis {
-	display: block !important;
-}
 
 .pagerBtn:hover {
 	color: #fff;
 	background-color: #0085a1;
 	border: 1px solid #0085a1;
+}
+
+@media only screen and (max-width: 767px) {
+	/* For mobile phones: */
+	.pagerBtnVis {
+		display: block !important;
+	}
 }
