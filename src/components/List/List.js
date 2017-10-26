@@ -33,8 +33,8 @@ class TagPanel extends React.Component {
 		});
 
 		return (
-			<div className={s.bsCallout} style={{'color': color, 'borderLeftColor': color}}>
-				<h4>{header}</h4>
+			<div className={s.bsCallout} style={{'borderLeftColor': color}}>
+				<Link style={{color}} to={'/tag/' + tags[0].att_alias} className={s.attLink}>{header}</Link>
 				<div className="tags">
 					{tags.map((item) => {
 						return <Tag key={item.tag_id} item={item} />
