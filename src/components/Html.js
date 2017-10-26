@@ -78,6 +78,7 @@ class Html extends React.Component {
 					<link rel="stylesheet" href="/styles/font-awesome.css" />
 					<link rel="stylesheet" href="/styles/fa-viber.css" />
 					<link rel="stylesheet" href="/styles/clean-blog.css" />
+					<link rel="stylesheet" href="/highlight.css" /> 
 					
 					{styles.map(style =>
 						<style
