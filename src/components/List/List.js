@@ -76,6 +76,8 @@ class Announcement extends React.Component {
 	}
 }
 
+/* ..- -. .. --.- ..- .. - . .-.-.- -.-. --- -- */
+
 let chunk = [];
 
 class List extends React.Component {
@@ -133,10 +135,29 @@ class List extends React.Component {
 		window.addEventListener('mouseup', () => {
 			this.preventor = false;
 		});
+
+		const {doScroll} = this.props;
+
+		if (doScroll) {
+			this.scrollToArticle(1);
+		}
 	}
 
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.scrollAction);
+	}
+
+/* ..- -. .. --.- ..- .. - . .-.-.- -.-. --- -- */
+
+	scrollToArticle(num) {
+		const
+			{ articlesContainer } = this.refs,
+			allArticles = articlesContainer.childNodes,
+			ind = num < allArticles.length ? num - 1 : allArticles.length - 1,
+			elSizes = allArticles[ind].getBoundingClientRect(),
+			{top} = elSizes;
+
+		window.scrollTo(0, top);
 	}
 
 	checkPager() {
@@ -197,7 +218,7 @@ class List extends React.Component {
 			bank = val % 10;
 
 		this.setState({
-			pagerExpressValue: val,
+			pagerExpressValue: +val,
 		});
 	}
 
@@ -339,6 +360,8 @@ class List extends React.Component {
 		return answer;
 	}
 
+/* ..- -. .. --.- ..- .. - . .-.-.- -.-. --- -- */
+
 	render() {
 		const
 			{feedStartPosition, feedEndPosition} = this.state;
@@ -369,7 +392,8 @@ class List extends React.Component {
 			if (a['tags'][0]['att_sort_order'] < b['tags'][0]['att_sort_order']) return 1;
 			if (a['tags'][0]['att_sort_order'] > b['tags'][0]['att_sort_order']) return -1;
 			return 0;
-		});
+		}),
+		sliderInfoShift = (this.sliderHeight - shiftValue) * pagerExpressValue / (this.articlesCount - 1);
 
 		this.formatDate();
 		this.checkTags();
@@ -401,7 +425,7 @@ class List extends React.Component {
 									onMouseUp={this.handlePagerInputRelease}
 								/>
 								
-								<div className={s.slider__container} style={{top: ((this.sliderHeight - shiftValue) * pagerExpressValue / this.articlesCount)}}>
+								<div className={s.slider__container} style={{top: sliderInfoShift}}>
 									<div className={s.slider__info}>
 										<div className={s.slider__value} >{(+pagerExpressValue + 1) + ' / ' + this.articlesCount}</div>
 										<div className={s['slider__date-text']} >{this.getArticleDate(+pagerExpressValue)}</div>

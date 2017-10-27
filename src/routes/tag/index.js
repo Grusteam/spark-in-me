@@ -8,22 +8,25 @@ export default {
 
 	path: '/tag/:alias',
 
-	async action(args) {
-		const
-			responseGlobal = await request('getBlogObjects'),
-			responsePosts = await request('getTagByAlias', {'targetId': 2, 'tagAlias': args.params.alias, 'getFullArticles': 1}, args.params.alias),
-			responseAuthors = await request('getAuthorByAlias', {'authorAlias': 'all-authors', 'getFullArticles': 0}),
-			responseTags = await request('getTagInfo', {'targetId': 2, 'tagId': 0, 'getFullArticles' : 1});
+	async action({params, dataCache}) {
 
-		if (!responseGlobal || !responsePosts || !responseTags) {
-			return { redirect: '/error' };
+		if (dataCache.requests != 1) {
+			dataCache.responseGlobal = await request('getBlogObjects'),
+			dataCache.responsePosts = await request('getTagByAlias', {'targetId': 2, 'tagAlias': params.alias, 'getFullArticles': 1}, params.alias),
+			dataCache.responseAuthors = await request('getAuthorByAlias', {'authorAlias': 'all-authors', 'getFullArticles': 0}),
+			dataCache.responseTags = await request('getTagInfo', {'targetId': 2, 'tagId': 0, 'getFullArticles' : 1});
 		}
 
-		// console.log('tag responsePosts', responsePosts);
+		dataCache.requests++;
 
+		if (!dataCache.responseGlobal || !dataCache.responsePosts || !dataCache.responseTags || !dataCache.responsePosts.response.data.tag_data) {
+
+			return { redirect: '/error' };
+		}
+		
 		const
-			glogalData = responseGlobal.response.data,
-			tagData = responsePosts.response.data.tag_data[0];
+			glogalData = dataCache.responseGlobal.response.data,
+			tagData = dataCache.responsePosts.response.data.tag_data[0];
 
 		const
 			posts = tagData.article_list;
@@ -40,7 +43,7 @@ export default {
 			postsData = {
 				posts: posts,
 				tagsList: true,
-				tags: responseTags.response.data.tag_data,
+				tags: dataCache.responseTags.response.data.tag_data,
 				pager: false
 			},
 
@@ -61,7 +64,7 @@ export default {
 				meta: tagData.tag_meta,
 				leftNav: {
 					soc: glogalData.social,
-					authors: responseAuthors.response.data,
+					authors: dataCache.responseAuthors.response.data,
 					similar: false
 				}
 			};
@@ -69,8 +72,8 @@ export default {
 		return {
 			meta: sortMetatags(tagData.tag_meta),
 			title: tagData.tag_title,
-			component: <Layout data={pageData} ><List data={postsData} /></Layout>,
+			component: <Layout data={pageData} ><List data={postsData} doScroll={true}/></Layout>,
 		};
-	},
+	}
 
 };

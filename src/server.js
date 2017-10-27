@@ -113,7 +113,7 @@ app.get('*', async (req, res, next) => {
 
 
 		const
-			dataCache = {test: 717},
+			dataCache = {requests: 0},
 			route = await UniversalRouter.resolve(routes, {
 				...context,
 				path: req.path,

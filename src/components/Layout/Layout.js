@@ -13,7 +13,7 @@ class Layout extends React.Component {
 	
 	
 	render() {
-		console.log('Layout render');
+		// console.log('Layout render');
 		// console.log('Layout data', this.props.data);
 		return (<div>
 				{this.props.data.ldjson ? <script type="application/ld+json"
