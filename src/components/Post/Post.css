@@ -19,3 +19,8 @@ article img {
 	margin: 0 3px 1px 0;
 	vertical-align: middle;
 }
+
+code {
+	min-width: 720px;
+	overflow: auto;
+}

@@ -84,15 +84,9 @@ class List extends React.Component {
 	constructor(props) {
 		super(props);
 
-		// console.log('this.props.data.posts', this.props.data.posts);
-
 		this.sliderHeight = 250;
-		this.articles = this.props.data.posts;
-		this.articlesCount = this.articles.length;
 
-		_.forEach(this.articles, function(o, i) {
-			o.posInBulk = i;
-		});
+		this.setInitialValues(props);
 
 		this.state = {
 			chunkStep: 10,
@@ -100,7 +94,7 @@ class List extends React.Component {
 			pager: true,
 			pagerExpressValue: 0,
 			feedStartPosition: 0,
-			feedEndPosition: 10,
+			feedEndPosition: this.articlesCount < 10 ? this.articlesCount : 10,
 		};
 
 		this.updateChunkLength = this.updateChunkLength.bind(this);
@@ -116,13 +110,28 @@ class List extends React.Component {
  		this.createChunk();
 	}
 
-	componentWillReceiveProps() {
+	componentWillReceiveProps(nextProps) {
+		this.checkPager();
+
+		this.setInitialValues(nextProps);
+
+		const
+			feedStartPosition = 0,
+			feedEndPosition = this.articlesCount < 10 ? this.articlesCount : 10;
+
+		chunk = this.articles.slice(feedStartPosition, feedEndPosition);
+
 		this.setState({
 			chunkStep: 10,
-			chunkLength: 10
+			chunkLength: 10,
+			pagerExpressValue: 0,
+			feedStartPosition,
+			feedEndPosition,
+		}, () => {
+			if (nextProps.doScroll) {
+				this.scrollToArticle(1);	
+			}
 		});
-
-		this.checkPager();
 	}
 
 	componentDidMount() {
@@ -136,9 +145,7 @@ class List extends React.Component {
 			this.preventor = false;
 		});
 
-		const {doScroll} = this.props;
-
-		if (doScroll) {
+		if (this.props.doScroll) {
 			this.scrollToArticle(1);
 		}
 	}
@@ -149,15 +156,25 @@ class List extends React.Component {
 
 /* ..- -. .. --.- ..- .. - . .-.-.- -.-. --- -- */
 
+	setInitialValues(props) {
+		this.articles = props.data.posts;
+		this.articlesCount = this.articles.length;
+
+		_.forEach(this.articles, function(o, i) {
+			o.posInBulk = i;
+		});
+	}
+
 	scrollToArticle(num) {
 		const
 			{ articlesContainer } = this.refs,
 			allArticles = articlesContainer.childNodes,
 			ind = num < allArticles.length ? num - 1 : allArticles.length - 1,
 			elSizes = allArticles[ind].getBoundingClientRect(),
-			{top} = elSizes;
+			{top} = elSizes,
+			offset = window.pageYOffset;
 
-		window.scrollTo(0, top);
+		setTimeout(() => window.scrollTo(0, offset + top), 0)
 	}
 
 	checkPager() {

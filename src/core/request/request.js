@@ -2,6 +2,8 @@ import fetch from '../fetch';
 
 export default function request(name, params, alias) {
 
+	// console.log('name, params, alias', name, params, alias);
+
 	let request = {
 		'key': 'aveysov_37db73bb0ce8f672618770b1956f8798',
 		'method': {
@@ -18,7 +20,7 @@ export default function request(name, params, alias) {
 			},
 			body: 'query=' + encodeURIComponent(JSON.stringify(request))
 	}).then(function(respData) {
-		return respData.json();hljs
+		return respData.json();
 	}).then(function(respBody) {
 		return respBody;
 	});

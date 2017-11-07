@@ -10,13 +10,25 @@ export default {
 
 	async action({dataCache}) {
 
-		if (dataCache.requests != 1) {
-			dataCache.responseGlobal = await request('getBlogObjects'),
-			dataCache.responsePosts = await request('getArticleFeed', {'getFullArticles': 1}),
-			dataCache.responseTags = await request('getTagInfo', {'targetId': 2, 'tagId': 0, 'getFullArticles' : 0}),
+		// console.log('action home');
+
+
+		if (dataCache.requests == 0) {
+			dataCache.responseGlobal = await request('getBlogObjects');
 			dataCache.responseAuthors = await request('getAuthorByAlias', {'authorAlias': 'all-authors', 'getFullArticles': 0});
+			dataCache.responseTags = await request('getTagInfo', {'targetId': 2, 'tagId': 0, 'getFullArticles' : 0});
+		}
+
+		if (dataCache.requests != 1) {
+			dataCache.responsePosts = await request('getArticleFeed', {'getFullArticles': 0});
 		}
 		dataCache.requests++;
+
+
+		// console.log(dataCache.responseGlobal);
+		// console.log(dataCache.responsePosts);
+		// console.log(dataCache.responseTags);
+		// console.log(dataCache.responseAuthors);
 		
 		if (!dataCache.responseGlobal || !dataCache.responsePosts || !dataCache.responseTags || !dataCache.responseAuthors) {
 			return { redirect: '/error' };
